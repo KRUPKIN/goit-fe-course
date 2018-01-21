@@ -1,0 +1,66 @@
+p{
+	display: inline-block;
+	font-family: arial;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+h2{
+	font-family: pathway gothic one;
+	font-size: 25px;
+	text-align:right;
+}
+h3{
+	display: block;
+	font-family: pathway gothic one;
+	font-size: 25px;
+	color: #344260;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+h5{
+	display: inline-block;
+	font-family: arial;
+	font-size: 14px;
+	color: #344260;
+	margin-bottom: 20px;
+}
+img{
+	display: block;
+    margin: 0 auto;
+	width: 400px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+li{
+	list-style-type: none; 
+	font-family: arial;
+	font-size: 14px;
+	color: #344260;
+	margin-bottom: 20px;
+}
+.wrapper{
+	width: 525px;
+	margin:auto;
+}	
+.block_one{
+	box-sizing: content-box;
+	border: outset;
+	padding:20px;
+	width: 480px;
+	margin:auto;
+}
+.block_two{
+	box-sizing: content-box;
+	border: outset;
+	padding:20px;
+	width: 480px;
+	margin:auto;
+}
+.block_three{
+	box-sizing: content-box;
+	border: outset;
+	padding:20px;
+	width: 480px;
+	margin:auto;
+}

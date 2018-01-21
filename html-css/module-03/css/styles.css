@@ -1,0 +1,72 @@
+body{
+	background-image:url(../img/minimalizm-oblaka-blue.jpg);
+	background-repeat:no-repeat;
+}
+p{
+	display: inline-block;
+	font-family: arial;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+h3{
+	display: block;
+	font-family: pathway gothic one;
+	font-size: 25px;
+	color: #344260;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+h5{
+	display: inline-block;
+	font-family: arial;
+	font-size: 14px;
+	color: #344260;
+	margin-bottom: 20px;
+}
+img{
+	width: 400px;
+	height: 100px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+hr{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+li{
+	list-style-type: none; 
+	font-family: arial;
+	font-size: 14px;
+	color: #344260;
+	margin-bottom: 20px;
+}
+
+.wrapper{
+	box-sizing: border-box;
+	width: 480px;
+	padding: 40px;
+	margin: auto;
+	margin-top: 240px;
+	background-color:white;
+}
+.block_two{
+width: 330px;
+}
+.spisok{
+	box-sizing: content-box;
+	padding-top: 20px;
+	font-weight:bold;
+}
+.spisok_first{
+	box-sizing: content-box;
+	display: inline-block;
+	width: 180px;
+	padding-left: 20px;
+}
+.spisok_second{
+	vertical-align: top;
+	display: inline-block;
+	width: 170px;
+	padding-left: 20px;
+	margin-top: 0px;
+}
