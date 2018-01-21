@@ -1,6 +1,10 @@
 body{
-	background-image:url(../img/minimalizm-oblaka-blue.jpg);
+	background-image:url(../img/fon.jpg);
 	background-repeat:no-repeat;
+}
+.substrate {
+	width:1920px;
+	height:1920px;
 }
 p{
 	display: inline-block;
