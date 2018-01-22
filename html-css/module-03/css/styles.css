@@ -7,6 +7,7 @@ body{
 }
 p{
 	display: inline-block;
+	color: #4e5050;
 	font-family: arial;
 	font-size: 12px;
 	margin-bottom: 20px;
@@ -15,7 +16,7 @@ h3{
 	display: block;
 	font-family: pathway gothic one;
 	font-size: 25px;
-	color: #344260;
+	color: #263555;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -23,7 +24,7 @@ h5{
 	display: inline-block;
 	font-family: arial;
 	font-size: 14px;
-	color: #344260;
+	color: #263555;
 	margin-bottom: 20px;
 }
 img{
@@ -40,7 +41,7 @@ li{
 	list-style-type: none; 
 	font-family: arial;
 	font-size: 14px;
-	color: #344260;
+	color: #263555;
 	margin-bottom: 20px;
 }
 
