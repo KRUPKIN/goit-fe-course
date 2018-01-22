@@ -2,9 +2,8 @@ body{
 	background-image:url(../img/fon.jpg);
 	background-repeat:no-repeat;
 }
-.substrate {
-	width:1920px;
-	height:1920px;
+.substrate { 
+	padding-bottom:400px;
 }
 p{
 	display: inline-block;
