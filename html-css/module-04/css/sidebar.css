@@ -57,12 +57,48 @@
 	display: inline-block;
 }
 
-.principle-content-text{
+.principle-content{
 	padding-left: 40px;
 }
 
-.principle-content-text::before { 
+.principle-content-text-first::before { 
     content: "\0031";  
+    display: inline-block;
+    color: white;
+    font-size: 16pt;  
+	width: 30px;
+	height: 30px;
+	background: #38afe5;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    text-align: center;  
+    line-height: 30px;  
+    position: relative; 
+    left: -35px; 
+    top: 30px;  
+}
+
+.principle-content-text-second::before { 
+    content: "\0032";  
+    display: inline-block;
+    color: white;
+    font-size: 16pt;  
+	width: 30px;
+	height: 30px;
+	background: #38afe5;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    text-align: center;  
+    line-height: 30px;  
+    position: relative; 
+    left: -35px; 
+    top: 30px;  
+}
+
+.principle-content-text-third::before { 
+    content: "\0033";  
     display: inline-block;
     color: white;
     font-size: 16pt;  
