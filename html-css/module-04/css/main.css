@@ -1,0 +1,51 @@
+.main-articles{
+	display: inline-block;
+	width: 650px;
+}
+
+.title-article{
+	padding-bottom: 50px;
+}
+
+.title-content-article{
+	padding-bottom: 18px;
+}
+
+.image-article{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 16px;
+}
+
+.text-article{
+	padding-bottom: 12px;
+}
+
+.profile-article{
+	outline: 1px #333;
+	height: 540px;
+	border-bottom:1px solid #dedbdb;
+	margin-bottom: 58px;
+}
+
+.offer-text{
+	padding-bottom: 36px;
+}
+
+.content-list{
+	list-style-type:none;
+	list-style-position: inside;
+	-webkit-column-count: 2; /* Safari and Chrome */
+	column-count: 2;
+	width: 500px;
+}
+
+.list-item{
+	margin-bottom: 30px;
+
+}
+
+.list-item::before {
+				content: "\2192 \0020";
+				color: #38afe5;
+}
