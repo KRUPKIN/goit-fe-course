@@ -7,4 +7,5 @@
 	padding-bottom: 80px;
 	background-color: #fff;
 	margin:auto;
+	font-size: 0; /*убираем зазор*/
 }

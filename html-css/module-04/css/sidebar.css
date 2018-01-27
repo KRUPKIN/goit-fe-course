@@ -1,23 +1,30 @@
 .sidebar{
 	display: inline-block;
-	width: 326px;
+	width: 227px;
 	vertical-align: top;
+}
+
+.principle{
+	padding-left: 44px; 
+	padding-bottom: 20px;
+}
+
+.testimonial{
 	padding-left: 44px;
 }
 
 .title-principle{
+/*	padding-bottom: 48px; - абсолютное позиционирование*/
 	padding-bottom: 20px;
 }
 
-.sidebar{
-	width: 227px;
-}
-
 .text-title{
+/*	padding-bottom: 18px; - абсолютное позиционирование*/
 	padding-bottom: 13px;
 }
 
 .principle-text{
+/*	padding-bottom: 34px; абсолютное позиционирование*/
 	padding-bottom: 8px;
 }
 
@@ -30,8 +37,8 @@
 .testimonial-box{
 	height: 210px;
 	width: 190px;
-	border: 1px solid #dfdcdc;
-	color: #fcfafa;
+	border: 1px solid #dedbdb;
+	background-color: #fcfafa;
 	padding:23px 20px;
 	margin-bottom: 24px;
 }
@@ -60,7 +67,7 @@
 .principle-content{
 	padding-left: 40px;
 }
-
+/*абсолютное позиционирование
 .principle-content-text-first::before { 
     content: "\0031";  
     display: inline-block;
@@ -74,9 +81,9 @@
 	border-radius: 50px;
     text-align: center;  
     line-height: 30px;  
-    position: relative; 
-    left: -35px; 
-    top: 30px;  
+    position: absolute; 
+    left: 940px; 
+    top: 435px;  
 }
 
 .principle-content-text-second::before { 
@@ -92,9 +99,9 @@
 	border-radius: 50px;
     text-align: center;  
     line-height: 30px;  
-    position: relative; 
-    left: -35px; 
-    top: 30px;  
+    position: absolute; 
+    left: 940px; 
+    top: 580px;  
 }
 
 .principle-content-text-third::before { 
@@ -110,7 +117,61 @@
 	border-radius: 50px;
     text-align: center;  
     line-height: 30px;  
+    position: absolute; 
+    left: 940px; 
+    top: 725px; 
+}*/
+
+.principle-content-text-first::before { 
+    content: "\0031";  
+    display: inline-block;
+    color: white;
+    font-size: 20px;  
+	width: 30px;
+	height: 30px;
+	background: #38afe5;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    text-align: center;  
+    line-height: 30px;  
     position: relative; 
-    left: -35px; 
+    left: -40px; 
+    top: 30px;  
+}
+
+.principle-content-text-second::before { 
+    content: "\0032";  
+    display: inline-block;
+    color: white;
+    font-size: 20px;  
+	width: 30px;
+	height: 30px;
+	background: #38afe5;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    text-align: center;  
+    line-height: 30px;  
+    position: relative; 
+    left: -40px; 
+    top: 30px;  
+}
+
+.principle-content-text-third::before { 
+    content: "\0033";  
+    display: inline-block;
+    color: white;
+    font-size: 20px;  
+	width: 30px;
+	height: 30px;
+	background: #38afe5;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    text-align: center;  
+    line-height: 30px;  
+    position: relative; 
+    left: -40px; 
     top: 30px;  
 }
