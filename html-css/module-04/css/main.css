@@ -42,10 +42,10 @@
 
 .list-item{
 	margin-bottom: 30px;
-
 }
 
 .list-item::before {
+				padding-right: 10px;
 				content: "\2192 \0020";
 				color: #38afe5;
 }
