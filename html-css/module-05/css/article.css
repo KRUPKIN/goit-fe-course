@@ -1,0 +1,70 @@
+.section-title{
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+.article-item{
+	display: inline-block;
+	height: 270px;
+	width: 31%;
+	margin-right:1.7%;
+ 
+}
+
+.article-item:nth-child(3n){
+	margin-right:0;
+}
+
+.venice{
+	background-image: url(../img/destinations/01_venice.jpg);
+}
+
+.usamerica{
+	background-image: url(../img/destinations/02_usa.jpg);
+}
+.paris{
+	background-image: url(../img/destinations/03_paris.jpg);
+}
+
+.slasher{
+	opacity: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #193149;
+}
+
+.slasher-title{
+	display: block;
+	text-align: center;
+	padding-bottom: 25px;
+	padding-top:20px;
+	color: #fdfdfd;
+	font-size: 30px;
+}
+
+.slasher-text{
+	padding:0 10px 0 10px;
+	margin-bottom: 10px;
+	font-family: arial;
+	font-size: 10px;
+	line-height:15px;
+	color:#fdfdfd;
+}
+
+.slasher-buttom{
+	padding:3px 12px 3px 12px;
+	font-family: arial;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #fbf6f9;
+	border:0.7px solid grey;
+	border-radius: 5px;
+	margin-left: 70px;
+	margin-bottom: 20px;
+}
+
+.slasher:hover{
+	opacity: 1;
+	transition: all 200ms ease-in;
+}

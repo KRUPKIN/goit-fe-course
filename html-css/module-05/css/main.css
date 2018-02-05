@@ -1,0 +1,43 @@
+.wrapper {
+	margin:auto;
+	width:1024px;
+	padding: 60px 60px 125px;
+	background-color: #fff;
+	margin-bottom: 700px;
+}
+
+.title{
+	font-family: Pathway Gothic One;
+	color: #263555;
+}
+
+.to-home{
+	text-align:center;
+	text-decoration: none;
+	position: fixed;
+	left: 1140px;
+	top:  600px;
+	width: 30px;
+	height: 30px;
+	padding:4px;
+	border-radius: 15px;
+	background-color: #38afe5;
+	opacity: 0.3;
+}
+
+.ancer{
+	font-size: 12px;
+	text-decoration:none;
+	color: #fdfdfd;
+
+}
+
+.to-home::behind{
+	content: "";
+}
+
+.to-home:hover{
+	transform: scale(1.1);
+	opacity: 1;
+	transition: all 200ms ease-in;
+}

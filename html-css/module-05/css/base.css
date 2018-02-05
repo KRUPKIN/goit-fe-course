@@ -1,0 +1,14 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	font-weight:normal;
+/*	outline: 1px solid red;*/
+}
+
+body{
+	padding-top: 45px;
+	background-color:#8db7de;
+	background-image:url(../img/fon.jpg);
+	background-repeat:no-repeat;
+}
