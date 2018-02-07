@@ -64,7 +64,7 @@
 	margin-bottom: 20px;
 }
 
-.slasher:hover{
+.article-item:hover .slasher{
 	opacity: 1;
 	transition: all 200ms ease-in;
 }

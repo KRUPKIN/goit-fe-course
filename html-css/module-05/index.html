@@ -3,7 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>module-05</title>
-	<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/article.css">
   <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet" >
 </head>
@@ -12,52 +16,33 @@
           <!-- HEADER -->
   <header class="page-header">
     <ul class="header-menu">
-      <li class="menu-item">HOME
-        <ul class="header-submenu">
-<!--           <li class="submenu-item">HOME PAGE</li>
-          <li class="submenu-item">VOYAJE</li>
-          <li class="submenu-item">TRAVEL</li> -->
-        </ul>
+      <li class="menu-item"> 
+        <a href="" class="menu-link">HOME</a>
       </li>
-      <li class="menu-item">ABOUT
+      <li class="menu-item">
+        <a href="" class="menu-link">ABOUT</a>
         <ul class="header-submenu">
           <li class="submenu-item">AGENCY</li>
           <li class="submenu-item">NEWS</li>
           <li class="submenu-item">TEAM</li>
         </ul>
       </li>
-      <li class="menu-item">GALERY
-        <ul class="header-submenu">
-<!--           <li class="submenu-item">PICTURE</li>
-          <li class="submenu-item">VIDEO</li>
-          <li class="submenu-item">INTERACTIVE</li> -->
-        </ul>
+      <li class="menu-item">
+        <a href="" class="menu-link">GALERY</a>
       </li>
       <li class="menu-item">
         <div class="logo-wraper">
           <a href="#" class="logo-world">JOURNEY</a>
         </div>
       </li>
-      <li class="menu-item">TOURS
-        <ul class="header-submenu">
-          <li class="submenu-item"></li>
-          <li class="submenu-item"></li>
-          <li class="submenu-item"></li>
-        </ul>
+      <li class="menu-item">
+        <a href="" class="menu-link">TOURS</a>
       </li>
-      <li class="menu-item">BLOG
-        <ul class="header-submenu">
-          <li class="submenu-item"></li>
-          <li class="submenu-item"></li>
-          <li class="submenu-item"></li>
-        </ul>
+      <li class="menu-item">
+        <a href="" class="menu-link">BLOG</a>
       </li>
-      <li class="menu-item">CONTACTS
-        <ul class="header-submenu">
-          <li class="submenu-item"></li>
-          <li class="submenu-item"></li>
-          <li class="submenu-item"></li>
-        </ul>
+      <li class="menu-item">
+        <a href="" class="menu-link">CONTACTS</a>
       </li>
     </ul>
   </header>
@@ -68,41 +53,49 @@
         <a class="ancer" href="#top">˄</a>
       </div> 
    <!-- SLIDER -->
-      <div class="slider">
-        <img class="slider-fon" src="img/slider/01.jpg" alt="rest">
+      <section class="slider">
+        <div class="slide">
+          <img class="slider-fon" src="img/slider/01.jpg" alt="rest">
+        </div>
+        <div class="slide">
+<!--           <img class="slider-fon" src="#" alt="rest"> -->
+        </div>
+        <div class="slide">
+<!--           <img class="slider-fon" src="#" alt="rest"> -->
+        </div>
         <h1 class="slider-title-big title">THAT ARE WORTH SEENG</h1>
         <h2 class="slider-title-small title">THERE ARE PLENTY OF PLACES</h2>
-        <div class="halfcirkle-right navigation"></div>
-        <div class="halfcirkle-left navigation"></div>
-      </div>
+        <button class="halfcirkle-right navigation"></button>
+        <button class="halfcirkle-left navigation"></button>
+      </section>
   <!-- ARTICLE -->
-       <div class="destination">
+       <section class="destination">
         <h3 class="section-title title">TOP DESTINATIONS</h3> 
         <div class="article-body">
-          <article class="article-item venice">
+          <div class="article-item venice">
             <div class="slasher">
               <h4 class="slasher-title title">VENICE</h4>
               <p class="slasher-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel rem alias, nostrum consequatur repellendus delectus eius, voluptatem dolor commodi ipsam mollitia dolore. Optio perspiciatis nesciunt culpa.</p>
               <a class="slasher-buttom" href="#">Details</a>
             </div>
-          </article>
+          </div>
 
-          <article class="article-item usamerica">
+          <div class="article-item usamerica">
             <div class="slasher">
               <h4 class="slasher-title title">VENICE</h4>
               <p class="slasher-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel rem alias, nostrum consequatur repellendus delectus eius, voluptatem dolor commodi ipsam mollitia dolore. Optio perspiciatis nesciunt culpa.</p>
               <a class="slasher-buttom" href="#">Details</a>
             </div>
-          </article>
+          </div>
 
-            <article class="article-item paris">
+            <div class="article-item paris">
             <div class="slasher">
               <h4 class="slasher-title title">VENICE</h4>
               <p class="slasher-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel rem alias, nostrum consequatur repellendus delectus eius, voluptatem dolor commodi ipsam mollitia dolore. Optio perspiciatis nesciunt culpa.</p>
               <a class="slasher-buttom" href="#">Details</a>
             </div>
           </article>
-        </div>
+        </section>
       </div>
     </div>
   </main>

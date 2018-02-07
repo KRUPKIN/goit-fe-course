@@ -3,7 +3,7 @@
 	width:1024px;
 	padding: 60px 60px 125px;
 	background-color: #fff;
-	margin-bottom: 700px;
+	margin-bottom: 70px;
 }
 
 .title{
@@ -32,9 +32,6 @@
 
 }
 
-.to-home::behind{
-	content: "";
-}
 
 .to-home:hover{
 	transform: scale(1.1);
