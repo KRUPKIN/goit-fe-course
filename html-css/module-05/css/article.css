@@ -15,15 +15,13 @@
 	margin-right:0;
 }
 
-.venice{
-	background-image: url(../img/destinations/01_venice.jpg);
+.article-item{
+	position: relative;
 }
 
-.usamerica{
-	background-image: url(../img/destinations/02_usa.jpg);
-}
-.paris{
-	background-image: url(../img/destinations/03_paris.jpg);
+.slasher{
+	position: absolute;
+	top: 0px;
 }
 
 .slasher{

@@ -38,6 +38,7 @@
 	border-bottom-right-radius: 45px;
 	display: inline-block;
 	background-color: #38afe5;
+	border:0px;
 }
 
 .halfcirkle-left{
@@ -50,6 +51,7 @@
 	border-bottom-left-radius: 45px;
 	display: inline-block;
 	background-color: #38afe5;
+	border:0px;
 }
 
 .halfcirkle-left::after{
@@ -58,6 +60,7 @@
 	top: 35px;
 	left: 15px;
 	color: #fdfdfd;
+	font-size: 16px;
 	transition: all 5s ease;
 }
 
@@ -67,6 +70,7 @@
 	top: 35px;
 	left: 15px;
 	color: #fdfdfd;
+	font-size: 16px;
 }
 
 
