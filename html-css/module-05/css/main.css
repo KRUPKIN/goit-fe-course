@@ -1,4 +1,5 @@
 .wrapper {
+	position: relative;
 	margin:auto;
 	width:1024px;
 	padding: 60px 60px 125px;
@@ -15,8 +16,8 @@
 	text-align:center;
 	text-decoration: none;
 	position: fixed;
-	left: 1415px;
-	top:  850px;
+	left: 74%;
+	top:  80%;
 	width: 30px;
 	height: 30px;
 	padding:4px;
