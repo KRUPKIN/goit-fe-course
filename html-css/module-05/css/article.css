@@ -36,7 +36,9 @@
 	text-align: center;
 	padding-bottom: 25px;
 	padding-top:20px;
-	color: #fdfdfd;
+	font-family: Open Sans Condensed;
+	color: #ffffff;
+
 	font-size: 30px;
 }
 
@@ -46,7 +48,7 @@
 	font-family: arial;
 	font-size: 10px;
 	line-height:15px;
-	color:#fdfdfd;
+	color:#cbc6c6;
 }
 
 .slasher-buttom{
