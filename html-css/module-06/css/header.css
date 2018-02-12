@@ -1,0 +1,75 @@
+.page-header{
+	display: flex;
+	justify-content:space-between;
+	width: 1200px;
+	margin:auto;
+	padding-top: 30px;
+	padding-bottom: 145px;
+}
+
+.logo-link{
+	text-decoration: none;
+	font-family: montserrat;
+	font-weight: 700;       
+	font-size:30px;
+	color: #95e1d3;
+}
+
+.menu-list{
+	display:flex;
+	position: relative;
+	justify-content:space-between;
+	width: 490px;
+	list-style: none;
+}
+
+.menu-item{
+	width: 50px;
+	text-align: center;
+}
+
+.menu-link{
+	font-style: 14px;
+	color: #95e1d3;
+	font-family:montserrat;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.menu-link::after{
+	content: "";
+	display: flex;
+	position: absolute;
+	top: 30px;
+ 	width: 50px;
+ 	height: 3px;
+ 	background-color: #f38181;
+ 	opacity: 0;
+ 	transition: all 0.5s ease;
+}
+
+.menu-link:hover{
+	color: #f38181;
+}
+
+.menu-link:hover.menu-link::after{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+.reclama{
+	opacity: 0;
+	position: absolute;
+	top: 75px;
+	left: 400px;
+	width: 150px;
+	height: 258px;
+	background-image: url(../img/profile/baba/baba.png);
+	background-size: 100%;
+	transition: all 1s ease;
+}
+
+.menu-item:hover>.reclama{
+	opacity: 1;
+	transition: all 1s ease;
+}

@@ -1,0 +1,17 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	font-weight:normal;
+/*	outline: 0.5px solid red;*/
+}
+
+body{
+	background-color:#ffffff;
+}
+
+.wrapper{
+	margin:auto;
+	padding-bottom: 95px;
+	width: 1200px;
+}
