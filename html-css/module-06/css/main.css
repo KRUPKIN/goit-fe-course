@@ -157,5 +157,9 @@ h5{
 
 .social-icon--item:hover{
 	background-color: #95e1d3;
+}
 
+.afterblock-text{
+	display: flex;
+	flex-direction: column;
 }
