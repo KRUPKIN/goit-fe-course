@@ -1,11 +1,11 @@
 .slider{
 	position: relative;
-	width: 900px; 
-	background-color: #555555;
-	background-image: url(../img/slider/01.jpg);
-	background-size: cover;
+	min-width: 900px;
+  	max-width: 75%;
 	margin-bottom: 50px;
 }
+
+
 
 .slider-title-big{
 	position: absolute;

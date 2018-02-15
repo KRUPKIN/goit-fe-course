@@ -1,7 +1,8 @@
 .wrapper {
 	position: relative;
 	margin:auto;
-	width:1024px;
+	min-width: 1024px;
+  	max-width: 75%;
 	padding: 60px 60px 125px;
 	background-color: #fff;
 	margin-bottom: 70px;
@@ -16,8 +17,8 @@
 	text-align:center;
 	text-decoration: none;
 	position: fixed;
-	left: 84.5%;
-	top:  80%;
+	right: calc((100vw - 1024px) / 2 + 10px);
+	bottom: 85px;
 	width: 30px;
 	height: 30px;
 	padding:4px;
