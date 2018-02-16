@@ -3,13 +3,13 @@
 	margin-bottom: 50px;
 }
 
-.article-item{
-	display: inline-block;
-	height: 270px;
-	width: 31%;
-	margin-right:1.7%;
- 
+.article-body{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
+
+
 
 .article-item:nth-child(3n){
 	margin-right:0;
@@ -22,9 +22,6 @@
 .slasher{
 	position: absolute;
 	top: 0px;
-}
-
-.slasher{
 	opacity: 0;
 	width: 50%;
 	height: 100%;

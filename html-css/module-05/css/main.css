@@ -1,11 +1,21 @@
 .wrapper {
-	position: relative;
-	margin:auto;
-	min-width: 1024px;
-  	max-width: 75%;
-	padding: 60px 60px 125px;
-	background-color: #fff;
-	margin-bottom: 70px;
+	  width: 1024px;
+	  padding: 60px 60px 135px 60px;
+	  margin-right: auto;
+	  margin-left: auto;
+	  background-color: #fff;
+}
+
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    max-width: 58%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    max-width: 100%;
+  }
 }
 
 .title{
@@ -24,6 +34,14 @@
 	padding:4px;
 	border-radius: 15px;
 	background-color: #38afe5;
+	transition: all 200ms ease-in;
+}
+
+.ancer:after{
+content: "\1F781";
+font-size: 20px;
+color: white;
+text-decoration:none;
 
 }
 
@@ -34,7 +52,7 @@
 }
 
 .to-home:hover{
-	transform: scale(1.1);
+	transform: scale(1.2);
 	opacity: 1;
 	transition: all 200ms ease-in;
 }
