@@ -25,23 +25,25 @@
 
 .to-home{
 	text-align:center;
+	vertical-align: middle;
 	text-decoration: none;
 	position: fixed;
 	right: calc((100vw - 1024px) / 2 + 10px);
 	bottom: 85px;
 	width: 30px;
 	height: 30px;
-	padding:4px;
 	border-radius: 15px;
 	background-color: #38afe5;
 	transition: all 200ms ease-in;
 }
 
 .ancer:after{
-content: "\1F781";
-font-size: 20px;
-color: white;
-text-decoration:none;
+	position: relative;
+	top: 3px;
+	content: "\1F781";
+	font-size: 20px;
+	color: white;
+	text-decoration:none;
 
 }
 

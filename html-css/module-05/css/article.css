@@ -9,6 +9,11 @@
 	justify-content: space-between;
 }
 
+.article-img{
+	height: 100%;
+	width: 98%;
+}
+
 
 
 .article-item:nth-child(3n){
