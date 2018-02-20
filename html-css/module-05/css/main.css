@@ -25,6 +25,7 @@
 
 .to-home{
 	text-align:center;
+	padding-top: 3px;
 	vertical-align: middle;
 	text-decoration: none;
 	position: fixed;
@@ -37,7 +38,7 @@
 	transition: all 200ms ease-in;
 }
 
-.ancer:after{
+/*.ancer:after{
 	position: relative;
 	top: 3px;
 	content: "\1F781";
@@ -45,10 +46,11 @@
 	color: white;
 	text-decoration:none;
 
-}
+}*/
 
 .ancer{
-	font-size: 12px;
+	font-size: 26px;
+	font-weight: 700;
 	text-decoration:none;
 	color: #fdfdfd;
 }
