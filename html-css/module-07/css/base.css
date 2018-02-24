@@ -1,0 +1,148 @@
+
+/*SECTION*/
+
+/*TITLE*/
+.title{
+	font-family: "Montserrat_bold", sans-serif;
+	font-size: 40px;
+	text-align: center;
+	margin:0px;
+	text-transform:uppercase;
+}
+.service-sub-title{
+	font-family: "DroidSerif-Italic" , sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: var(--grey-color);
+	margin:0px;
+	padding-top: 20px;
+	padding-bottom:80px;
+}
+
+/*BOXES*/
+.service-section{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.services-box{
+	display: flex;
+	justify-content: space-between;
+
+}
+/*CONTEINER-SECTOIN*/
+.container{
+	flex-basis:290px;
+	text-align: center;
+}
+
+.icon{
+	margin:auto;
+	width: 74px;
+	height: 74px;
+}
+
+.container-title{
+	font-family: "Montserrat_bold";
+	font-size: 18px;
+}
+
+.container-text{
+	font-family: "RobotoSlab_Regular";
+	font-size: 14px;
+	color: var(--grey-color);
+}
+
+.commerce{
+	background: url(../img/01.png);
+}
+.responsive-web{
+	background: url(../img/02.png);
+}
+.web-security{
+	background: url(../img/03.png);
+}
+
+.container-title{
+
+}
+
+/*FORM-SECTION*/
+.form-section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.form-title{
+	color:var(--white-color);
+}
+
+.form-container{
+	padding-top: 75px;
+}
+
+/*FORM*/
+form{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/*LEFT*/
+.left{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-basis: 455px;
+	height: 210px;
+}
+
+input{
+	line-height: 50px;
+	font-family: "Montserrat_bold";
+	font-size: 14px;
+	text-indent:20px;
+	color: var(--black-color);
+	border-radius: 5px;
+
+}
+input::-webkit-input-placeholder { color: #bbbbbb; } /*меняем цвет placeholder google chrome*/
+input::-moz-placeholder { color: #bbbbbb; } /*меняем цвет placeholder firefox*/
+input:-moz-placeholder { color: #bbbbbb; } /*меняем цвет placeholder firefox-18*/
+
+/*RIGHT*/
+.right{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 455px;
+	height: 210px;
+}
+
+textarea{
+	line-height: 50px;
+	text-indent:20px;
+	height: 210px;
+	font-family: "Montserrat_bold";
+	font-size: 14px;
+	color: var(--black-color);
+	border-radius: 5px;
+	resize: none;
+}
+
+textarea::-webkit-input-placeholder { color: #bbbbbb; } /*меняем цвет placeholder google chrome*/
+textarea::-moz-placeholder { color: #bbbbbb; } /*меняем цвет placeholder firefox*/
+textarea:-moz-placeholder { color: #bbbbbb; } /*меняем цвет placeholder firefox-18*/
+
+
+/*BUTTON*/
+input[type="submit"]{
+	margin: 30px auto;
+	line-height: 65px;
+	flex-basis: 240px;
+	text-align: center;
+	font-family: "Montserrat_bold";
+	font-size: 18px;
+	color: var(--white-color);
+	background-color: var(--yellow-color);
+	border: none;
+}

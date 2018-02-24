@@ -1,0 +1,42 @@
+header{
+	display: flex;
+	flex-basis:100%;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 40px;
+}
+
+.logotype{
+	margin: 0px;
+}
+
+.logo-link{
+	font-family: "Condiment_Regular", sans-serif;
+	font-size: 30px;
+	color: var(--yellow-color);
+	text-decoration: none;
+}
+
+.menu-blok{
+	flex-basis:480px;
+}
+
+.menu-list{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.item-link{
+	font-family: "Montserrat_regular", sans-serif;
+	font-size: 14px;
+	color: var(--black-color);
+	text-decoration: none;
+}
+
+.item-link:hover{
+	color: var(--yellow-color);
+}
+

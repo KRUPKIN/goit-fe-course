@@ -1,0 +1,78 @@
+*{
+/*	outline: 0.5px solid grey;*/
+::-moz-focus-inner { border: 0; padding: 0; }
+}
+
+body {
+	box-sizing: border-box;
+	padding: 0px;
+	margin:0px;
+}
+
+.background-first-half{
+	/*max-width: 1400px;*/
+	background color: var(--white-color);
+}
+
+.background-second-half{
+	/*max-width: 1400px;*/
+	background: var( --black-color);
+	background-image: url(../img/worldMap.png);
+	background-repeat: no-repeat;
+	background-position: 100% 90%;
+	margin-bottom:
+}
+
+.wrapper{
+	width: 940px;
+	margin:auto;
+}
+
+
+:root {
+  --yellow-color: #fed136;
+  --grey-color: #777777; 
+  --black-color: #222222;
+  --white-color: #ffffff;
+}
+
+
+@font-face{
+	font-family: 'Montserrat_regular';
+	src: url('../fount/montserrat.woff2') format('woff2');
+	font-weight: normal;
+  	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Montserrat_bold';
+	src: url('../fount/montserratbold.woff2') format('woff2');
+	font-weight: normal;
+  	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Condiment_Regular';
+	src: url('../fount/Condiment-Regular.ttf') ;      /*OleoScript-Regular*/
+	font-weight: normal
+  	font-style: normal;
+}
+
+@font-face{
+	font-family: 'DroidSerif-Italic';
+	src: url('../fount/DroidSerif-Italic.ttf') ;   
+	font-weight: normal;
+  	font-style: italic;
+}
+
+@font-face{
+	font-family: 'RobotoSlab_Regular';
+	src: url('../fount/RobotoSlab-Regular.ttf') ;
+	font-weight: normal;
+  	font-style: normal;
+}
+
+/*@keyframes yellow-color {
+	from {color: var(--black-color);}
+    to {color: var(--yellow-color);}
+	}*/
