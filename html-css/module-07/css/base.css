@@ -3,14 +3,18 @@
 
 /*TITLE*/
 .title{
-	font-family: "Montserrat_bold", sans-serif;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
 	font-size: 40px;
 	text-align: center;
 	margin:0px;
 	text-transform:uppercase;
 }
 .service-sub-title{
-	font-family: "DroidSerif-Italic" , sans-serif;
+  	font-family: 'Merriweather';
+  	font-style: italic;
+  	font-weight: 400;
 	font-size: 16px;
 	text-align: center;
 	color: var(--grey-color);
@@ -43,12 +47,16 @@
 }
 
 .container-title{
-	font-family: "Montserrat_bold";
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 900;
 	font-size: 18px;
 }
 
 .container-text{
-	font-family: "RobotoSlab_Regular";
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 400;
 	font-size: 14px;
 	color: var(--grey-color);
 }
@@ -99,13 +107,31 @@ form{
 
 input{
 	line-height: 50px;
-	font-family: "Montserrat_bold";
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 900;
 	font-size: 14px;
 	text-indent:20px;
 	color: var(--black-color);
 	border-radius: 5px;
-
 }
+
+
+/*СУПЕР ПУПЕР КОД ДЛЯ ФОРМ*/
+
+input:invalid:not(:placeholder-shown) {outline: 3px solid #BF0000;}
+input:valid:not(:placeholder-shown) {outline: 3px solid #12BF00;}
+
+input[type="submit"]:valid:not(:placeholder-shown) {outline: none;}
+
+/*input:required:valid {
+  border-color: #00A700;
+}
+input:required:invalid{
+  border-color: none;
+}*/
+
+
 input::-webkit-input-placeholder { color: #bbbbbb; } /*меняем цвет placeholder google chrome*/
 input::-moz-placeholder { color: #bbbbbb; } /*меняем цвет placeholder firefox*/
 input:-moz-placeholder { color: #bbbbbb; } /*меняем цвет placeholder firefox-18*/
@@ -122,12 +148,17 @@ textarea{
 	line-height: 50px;
 	text-indent:20px;
 	height: 210px;
-	font-family: "Montserrat_bold";
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 900;
 	font-size: 14px;
 	color: var(--black-color);
 	border-radius: 5px;
 	resize: none;
 }
+
+textarea:invalid:not(:placeholder-shown) {outline: 3px solid #BF0000;}
+textarea:valid:not(:placeholder-shown) {outline: 3px solid #12BF00;}
 
 textarea::-webkit-input-placeholder { color: #bbbbbb; } /*меняем цвет placeholder google chrome*/
 textarea::-moz-placeholder { color: #bbbbbb; } /*меняем цвет placeholder firefox*/
@@ -140,7 +171,9 @@ input[type="submit"]{
 	line-height: 65px;
 	flex-basis: 240px;
 	text-align: center;
-	font-family: "Montserrat_bold";
+ 	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 900;
 	font-size: 18px;
 	color: var(--white-color);
 	background-color: var(--yellow-color);

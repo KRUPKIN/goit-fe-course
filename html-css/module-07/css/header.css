@@ -11,8 +11,10 @@ header{
 }
 
 .logo-link{
-	font-family: "Condiment_Regular", sans-serif;
-	font-size: 30px;
+	font-family: 'Lobster';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
 	color: var(--yellow-color);
 	text-decoration: none;
 }
@@ -30,8 +32,9 @@ header{
 }
 
 .item-link{
-	font-family: "Montserrat_regular", sans-serif;
-	font-size: 14px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
 	color: var(--black-color);
 	text-decoration: none;
 }
