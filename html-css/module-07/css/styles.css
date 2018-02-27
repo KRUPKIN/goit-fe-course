@@ -1,6 +1,5 @@
 *{
 /*	outline: 0.5px solid grey;*/
-::-moz-focus-inner { border: 0; padding: 0; }
 }
 
 body {
@@ -10,21 +9,18 @@ body {
 }
 
 .background-first-half{
-	/*max-width: 1400px;*/
 	background color: var(--white-color);
 }
 
 .background-second-half{
-	/*max-width: 1400px;*/
 	background: var( --black-color);
 	background-image: url(../img/worldMap.png);
 	background-repeat: no-repeat;
 	background-position: 100% 90%;
-	margin-bottom:
 }
 
 .wrapper{
-	width: 940px;
+	max-width: 940px;
 	margin:auto;
 }
 
@@ -96,12 +92,3 @@ body {
        url('../fonts/lobster/lobster-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/*
-  @keyframes amination-opacit{
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }*/
