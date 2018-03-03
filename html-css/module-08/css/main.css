@@ -1,0 +1,105 @@
+.main-backgruond{
+	padding-top: 2.5rem;
+	padding-bottom: 3.125rem;
+	background: #ffffff;
+}
+
+.main-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container-title{
+	padding: 0 5%;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-weight: 800;
+	font-size: 1.375rem;
+	color: var(--black-color)
+}
+
+.main-wrap{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.partner-page{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	padding: 1rem 0;
+	max-width: 13.75rem;
+}
+
+.photo-profile{
+	border-radius: 100px;
+	background: #333333;
+}
+
+.profile-link{
+	position: relative;
+}
+
+.profile-link:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 70%;
+	left: 70%;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 1rem;
+	border: 0.16rem solid white;
+	transform: scale(1);
+	transition: all 1s ease;
+	background: #ff4e50 url(../img/profile/icon/1.png) no-repeat center;
+}
+
+.Lucas:before{
+	background: #ffa507 url(../img/profile/icon/2.png) no-repeat center;
+}
+
+.Heather:before{
+	background: #1cd7ad url(../img/profile/icon/3.png) no-repeat center;
+}
+
+.Brady:before{
+	background: #4e73db url(../img/profile/icon/4.png) no-repeat center;
+}
+
+.profile-link:hover:before{
+	background-color: #02CF02;
+	transform: scale(1.1);
+	transition: all 1s ease;
+}
+
+.partner-name{
+	margin: 1.25rem 0;
+	font-family: 'Montserrat';
+	font-weight: 800;
+	font-size: 0.875rem;
+}
+
+.short-info{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 0.875rem;
+	color: var(--black-color);
+	text-align: center;
+}
+
+.main_but{
+	width: 17.5rem;
+	line-height: 2.5rem;
+	border-radius: 1.25rem;
+	border: 0.125rem solid var(--red-color);
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 0.875rem;
+	color: var(--red-color);
+	background-color: var(--white-color);
+}

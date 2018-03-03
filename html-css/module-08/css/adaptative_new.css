@@ -1,0 +1,125 @@
+/**768-1439*/
+@media screen and (min-width: 768px) and (max-width: 1440px){
+
+.header-background{
+	background: url(../img/background/b_tablet.jpg) center top no-repeat;
+	min-height: 43.75rem;
+	max-width: 100%;
+	padding-top: 3.125rem;
+}
+
+.header-menu{
+	flex-direction:row;
+	justify-content: space-between;
+	min-width: 41.25rem;
+}
+
+.top-title{
+	margin-bottom: 2.50rem;
+	font-size: 3.25rem;
+	max-width: 34rem;
+}
+
+.top-title-text{
+	margin-bottom: 2.1875rem;
+}
+.header-but{
+	width: 14.375rem;
+}
+
+.wrapper{
+	max-width: 48rem;
+}
+
+.main-backgruond{
+	padding-top: 4.375rem;
+}
+.container-title{
+	padding-bottom: 2.1875rem;
+}
+
+.main-wrap{
+	flex-wrap: wrap;
+	min-width: 30.625rem;
+	max-height: 39.25rem;
+}
+
+.partner-page{
+	min-width: 50%;
+	padding-bottom: 3.125rem;
+}
+.short-info{
+	max-width: 13.75rem;
+}
+}
+
+
+/**-1440 to 8*/
+@media screen and (min-width: 1440px){
+.header-background{
+	background: url(../img/background/b_desktop.jpg) center top no-repeat;
+	min-height: 43.75rem;
+	max-width: 100%;
+	padding-top: 3.125rem;
+}
+
+.header-menu{
+	flex-direction:row;
+	justify-content: space-between;
+	min-width: 58.75rem;
+}
+
+.top-title{
+	margin-bottom: 2.50rem;
+	font-size: 3.25rem;
+	max-width: 34rem;
+}
+
+.top-title-text{
+	margin-bottom: 2.1875rem;
+}
+
+.header-but{
+	width: 14.375rem;
+}
+
+.main-backgruond{
+	padding-top: 4.375rem;
+	min-width: 100%;
+}
+
+.container{
+	min-width: 100%;
+}
+
+.container-title{
+	padding-bottom: 2.1875rem;
+}
+
+.main-wrap{
+	flex-direction: row;
+	min-width: 58.75rem;
+}
+
+.partner-page{
+	min-width: 25%;
+	padding-bottom: 3.125rem;
+	order: 2;
+}
+
+.bradley-page{
+	order:0;
+}
+
+.heather-page{
+	order:1;
+}
+
+.short-info{
+	max-width: 13.75rem;
+}
+
+.main_but{
+	width: 12rem;
+}
+}
