@@ -1,9 +1,17 @@
-/**768-1439*/
-@media screen and (min-width: 768px) and (max-width: 1440px){
-
+@media screen and (min-width: 320px) and (max-width: 767px){
 .header-background{
 	background: url(../img/background/b_tablet.jpg) center top no-repeat;
-	min-height: 43.75rem;
+/*	min-height: 43.75rem;*/
+	max-width: 100%;
+	padding-top: 3.125rem;
+}
+}
+
+
+/**768-1439*/
+@media screen and (min-width: 768px) and (max-width: 1439px){
+.header-background{
+	background: url(../img/background/b_desktop.jpg) center top no-repeat;
 	max-width: 100%;
 	padding-top: 3.125rem;
 }
@@ -27,9 +35,9 @@
 	width: 14.375rem;
 }
 
-.wrapper{
+/*.wrapper{
 	max-width: 48rem;
-}
+}*/
 
 .main-backgruond{
 	padding-top: 4.375rem;
@@ -55,7 +63,7 @@
 
 
 /**-1440 to 8*/
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1439px){
 .header-background{
 	background: url(../img/background/b_desktop.jpg) center top no-repeat;
 	min-height: 43.75rem;
