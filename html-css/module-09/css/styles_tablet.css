@@ -1,0 +1,47 @@
+@media (min-width: 769px) {
+	
+	.header-background{
+	min-height: 43.75rem;
+	background: #fff url(../img/background/b_desktop.jpg) center no-repeat;
+}
+
+.title-block{
+	margin: auto;
+	text-align: center;
+}
+
+.menu-block{
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.header-title{
+	font-size: 3.25rem;
+	text-align: center;
+}
+
+.header-subtitle{
+	font-size: 1.5em;
+	color: var(--text-color_white);
+	text-align: center;
+}
+
+.profile-container {
+	text-align: center;
+}
+
+.profile-title_top{
+	margin-bottom: 2rem;
+}
+	.partner-page{
+	order: 2;
+}
+
+	.bradley-page{
+	order:0;
+}
+
+	.heather-page{
+	order:1;
+}
+}

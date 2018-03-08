@@ -1,0 +1,19 @@
+@media (min-width: 321px) and (max-width: 768px){
+	
+	.header-background{
+	min-height: 33.75rem;
+	background: #333 url(../img/background/b_tablet.jpg) center no-repeat;
+}
+
+	.partner-page{
+	order: 2;
+}
+
+	.bradley-page{
+	order:0;
+}
+
+	.heather-page{
+	order:1;
+}
+}
