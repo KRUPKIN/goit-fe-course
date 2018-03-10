@@ -12,6 +12,11 @@ header{
 
 .menu{
 	margin:0;
+	justify-content: flex-end;
+}
+
+.logotype-link{
+	justify-content: flex-start;
 }
 
 .menu-link{
