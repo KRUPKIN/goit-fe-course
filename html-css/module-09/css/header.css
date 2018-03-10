@@ -1,0 +1,82 @@
+.menu{
+	display: flex;
+	justify-content: center;
+	padding:0;
+	list-style: none;
+}
+
+.menu-link{
+	display: flex;
+	justify-content: center;
+	margin-right: 2rem;
+	margin-bottom: 7.125rem;
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+
+.logotype-link{
+	display: flex;
+	justify-content: center;
+	font-size: 1.25rem;
+	margin-bottom: 2rem;
+}
+
+.header-title_big{
+	font-size: 1.725rem;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+.header-title_little{
+	font-size: 1rem;
+	color: var(--text-color_white)
+}
+
+.header-button{
+	color: var(--text-color_white);
+	background-color: var(--text-color_red);
+	border: none;
+}
+
+			/*HEADER_HOVER*/
+
+.logotype-link:hover{
+	text-decoration: none;
+	color: var(--text-color_red)
+}
+
+.Log_in, .Sign_up{
+	position: relative;
+}
+
+.Log_in:hover, .Sign_up:hover{
+	text-decoration: none;
+	color: var(--text-color_red)
+}
+
+.Log_in:hover:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	transform: translate(5%, 10%);
+	top:-50%;
+	left:-50%;
+ 	width: 5rem;
+ 	height: 2.1875rem;
+ 	border: 0.125rem solid #fff;
+ 	border-radius: 1rem;
+}
+
+.Sign_up:hover:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	transform: translate(10%, 10%);
+	top:-50%;
+	left:-40%;
+ 	width: 5rem;
+ 	height: 2.1875rem;
+ 	border: 0.125rem solid #fff;
+ 	border-radius: 1rem;
+}
+
