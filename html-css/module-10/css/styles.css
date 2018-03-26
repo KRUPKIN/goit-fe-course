@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+/*  outline: 1px solid grey;*/
+}
+
+:root{
+	--text-color_white:#FFFFFF;
+  --text-color_black:#333333;
+  --text-color_yelloy:#fce38a;
+  --text-color_red:#f38181;
+  --text-color_grey:#999999;
+  --text-color_blue:#95e1d3;
+}
+
+/*GRID*/
+.wrapper{
+	display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        ". . m m m m m m m m . ."
+        ". . f f f f f f f f . .";
+}
+
+.header {
+    grid-area: h;
+}
+
+.main {
+    grid-area: m;
+}
+
+.footer {
+   grid-area: f;
+}
+
+
+
+.title--decoratiwe{
+  font-family: Kaushan Script;
+  font-size: 24px;
+  color: var(--text-color_black);
+}
+
+.title{
+  margin-top: 25px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--text-color_black); 
+}
+
+.btn{
+  padding: 15px 30px;
+  margin-bottom: 170px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text-color_white); 
+  border: 2px solid white;
+  background: none;
+}
+
+.text__grey{
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--text-color_grey);
+}

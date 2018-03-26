@@ -1,0 +1,35 @@
+.footer{
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid var(--text-color_grey)
+}
+
+.footer__text{
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.footer__text--red{
+	color: var(--text-color_red);
+}
+
+.footer_input{
+	line-height: 38px;
+	margin-right: -10px;
+}
+
+.footer_input::placeholder{
+	padding-left: 5px;
+	font-family: roboto;
+	font-weight: 300;
+	font-size:15px;
+	font-style: italic;
+	color: var(--text-color_grey)
+}
+
+.footer__btn{
+	margin: 5px 0;
+	text-transform: uppercase;
+	background-color: var(--text-color_blue);
+}

@@ -1,0 +1,123 @@
+.header{
+	width: 100%;
+	background: url(../img/background/eagle-1x.jpg) no-repeat center;
+	background-size: cover;
+	text-align: center;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) 
+{
+.header {
+    background: url(../img/background/eagle-2x.jpg) no-repeat center;
+  }
+}
+
+.header__body{
+	margin: auto;
+	padding: 30px 0;
+	max-width: 66.66%
+}
+
+.header__navigation{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+
+.logotype{
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 1.875rem;
+	text-decoration: none;
+	color: var(--text-color_white);
+}
+
+.menu__list{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	margin: 0;
+	padding: 0;
+	min-width: 38.75rem;
+	list-style: none;
+}
+
+.menu__link{
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 0.85rem;
+	text-decoration: none;
+	color: var(--text-color_white);
+}
+
+.menu__link:hover{
+	color: var(--text-color_yelloy);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.menu__link::after{
+ 	background-color: var(--text-color_yelloy);
+    display: block;
+    position: relative;
+    top: 5px;
+    content: "";
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+
+.menu__link:hover:after,
+.menu__link:focus:after {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.menu__link{
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 0.85rem;
+	text-decoration: none;
+	color: var(--text-color_white);
+}
+
+.icon{
+	width: 22px;
+	height: 22px;
+}
+
+.title-block{
+	margin: auto;
+	max-width: 940px;
+}
+
+.title--decoratiwe-white{
+	padding-top: 120px;
+	color: var(--text-color_white);
+	font-size: 72px;
+}
+
+.title--white{
+	margin: 0;
+	margin-bottom: 120px;
+	color: var(--text-color_white);
+	font-size: 150px;
+	line-height: 150px;
+	text-transform: uppercase;
+}

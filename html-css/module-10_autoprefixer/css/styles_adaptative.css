@@ -1,0 +1,105 @@
+@media screen and (max-width: 1200px ) {
+    .wrapper{
+    display: -ms-grid;
+    display: grid; 
+    -ms-grid-columns: (1fr)[12]; 
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+        "h h h h h h h h h h h h"
+        ". m m m m m m m m m m ."
+        ". f f f f f f f f f f .";
+}
+.header__body{
+    margin: auto;
+    max-width: 83.33%
+}
+}
+
+
+@media screen and (max-width: 960px ) {
+    .wrapper{
+    display: -ms-grid;
+    display: grid; 
+    -ms-grid-columns: (1fr)[12]; 
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+        "h h h h h h h h h h h h"
+        ". m m m m m m m m m m ."
+        "f f f f f f f f f f f f";
+}
+.service__body{
+    -ms-grid-columns: (minmax(340px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    -ms-grid-rows: (75px)[6];
+        grid-template-rows: repeat(6, 75px)
+}
+
+.header__body{
+    margin: auto;
+    max-width: 100%
+}
+
+.header__navigation{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.logotype{
+    display: none;
+}
+
+.title-block{
+    margin: auto;
+    max-width: 700px;
+}
+
+.title--white{
+    font-size: 96px;
+    line-height: 96px;
+}
+}
+
+@media screen and (max-width: 768px ) {
+
+.menu__list{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 400px;
+}
+
+.menu__item{
+    padding-bottom: 10px;
+}
+
+.title-block{
+    margin: auto;
+    max-width: 400px;
+}
+
+.title--decoratiwe-white{
+    padding-top: 40px;
+    font-size: 52px;
+}
+
+.title--white{
+    font-size: 76px;
+    line-height: 76px;
+}
+
+
+.footer{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+}
