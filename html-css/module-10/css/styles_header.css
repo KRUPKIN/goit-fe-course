@@ -4,7 +4,7 @@
 	background-size: cover;
 	text-align: center;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) 
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) 
 {
 .header {
     background: url(../img/background/eagle-2x.jpg) no-repeat center;
@@ -18,8 +18,12 @@
 }
 
 .header__navigation{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 
@@ -32,9 +36,15 @@
 }
 
 .menu__list{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 	margin: 0;
 	padding: 0;
 	min-width: 38.75rem;
@@ -51,6 +61,8 @@
 
 .menu__link:hover{
 	color: var(--text-color_yelloy);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
@@ -63,6 +75,8 @@
     height: 2px;
     width: 100%;
     opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 
 }
@@ -70,6 +84,8 @@
 .menu__link:hover:after,
 .menu__link:focus:after {
     opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 

@@ -1,12 +1,13 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 /*  outline: 1px solid grey;*/
 }
 
 :root{
-	--text-color_white:#FFFFFF;
+  --text-color_white:#FFFFFF;
   --text-color_black:#333333;
   --text-color_yelloy:#fce38a;
   --text-color_red:#f38181;
@@ -16,23 +17,34 @@
 
 /*GRID*/
 .wrapper{
-	display: grid; 
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas:
+  display: -ms-grid;
+  display: grid; 
+    -ms-grid-columns: (1fr)[12]; 
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
         "h h h h h h h h h h h h"
         ". . m m m m m m m m . ."
         ". . f f f f f f f f . .";
 }
 
 .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
     grid-area: h;
 }
 
 .main {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
     grid-area: m;
 }
 
 .footer {
+   -ms-grid-row: 3;
+   -ms-grid-column: 3;
+   -ms-grid-column-span: 8;
    grid-area: f;
 }
 
