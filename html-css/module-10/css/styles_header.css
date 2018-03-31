@@ -8,6 +8,7 @@
 {
 .header {
     background: url(../img/background/eagle-2x.jpg) no-repeat center;
+    background-size: cover;
   }
 }
 
