@@ -16,6 +16,7 @@
 
 .footer__text--red{
 	color: var(--text-color_red);
+	text-decoration: none;
 }
 
 .footer_input{

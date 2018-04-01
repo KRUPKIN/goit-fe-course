@@ -6,7 +6,7 @@
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas:
         "h h h h h h h h h h h h"
-        ". . m m m m m m m m . ."
+        ". m m m m m m m m m m ."
         ". f f f f f f f f f f .";
 }
 .header__body{
@@ -14,10 +14,15 @@
     max-width: 83.33%
 }
 
+.card__name{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
 .card__block{
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 }
 
@@ -30,7 +35,7 @@
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas:
         "h h h h h h h h h h h h"
-        ". . m m m m m m m m . ."
+        ". m m m m m m m m m m ."
         "f f f f f f f f f f f f";
 }
 .service__body{
@@ -41,7 +46,7 @@
 .card__block{
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .header__body{
@@ -107,6 +112,12 @@
         grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     -ms-grid-rows: (75px)[6];
         grid-template-rows: repeat(6, 75px)
+}
+
+.card__block{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
 }
 
 .footer{
@@ -181,11 +192,6 @@ margin: 0;
 
 .team__body{
     margin-top: 40px;
-}
-
-.card__name{
-    padding-top: 10px;
-    padding-bottom: 5px;
 }
 
 .footer__form{
