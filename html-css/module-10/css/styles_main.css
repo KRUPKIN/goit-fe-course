@@ -30,7 +30,7 @@
 	display: grid;
     grid-gap: 30px;
     -ms-grid-columns: (minmax(340px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     -ms-grid-rows: (100px)[2];
         grid-template-rows: repeat(2, 100px)
 }
