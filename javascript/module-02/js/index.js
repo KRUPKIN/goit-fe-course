@@ -50,7 +50,6 @@ do {
   }
 } while (
   // тут я придумал условия для повторения prompt-a
-  userInput !== Number.isNaN(num) &&
   userInput !== null
 );
 // принял решение использовать цикл со счётчиком (for) для перебора массива numbers
