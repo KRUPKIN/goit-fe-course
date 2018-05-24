@@ -1,4 +1,4 @@
-'user strict'
+'user strict';
 // ПЕРВАЯ
 /*
     1. Используя метод map, составьте массив 
@@ -15,19 +15,10 @@ const guests = [
   {name: 'Poly', age: 18, isActive: false},
   {name: 'Ajax', age: 30, isActive: true},
   {name: 'Chelsey', age: 45, isActive: false}
-];
+]
 
 
-
- const getPropValues = function(arr, prop) {
-  let arrey = [];
-  arr.map((item, idx, arr) => {
-  arrey.push(item[prop]);
- });
- return arrey
-};
-
-
+const getPropValues = (arr, name) => arr.map(guest => guest[name]);
 
 // Вызовы функции для проверки
 console.log(
@@ -42,3 +33,12 @@ console.log(
   getPropValues(guests, 'isActive')
 ); // [true, false, true, false]
 
+// const arr = guests.map(arr => arr.name);
+// console.log(arr);
+// const callback = guests.map(arr => arr[name]);
+// console.log(callback);
+
+
+const getPropValues = function(arr, name) {
+  return arr.map(guest => guest[name]);
+}
