@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
   Создайте менеджер управления данными аккаунтов пользователей соцсети SocialBook.
@@ -20,103 +20,99 @@
         likes - количество лайков поста
 */
 
+
+
 const initialUsers = [
-  {
-    id: '-s19a6hqce',
-    login: 'mangozedog@mail.com',
-    password: 'qwe123zv',
-    isActive: true,
-  },
-  {
-    id: '-qkpzenjxe',
-    login: 'polysweet@skynet.ze',
-    password: '123zxc78',
-    isActive: true,
-  },
-  {
-    id: '-e51cpd4di',
-    login: 'ajax2k@change.ua',
-    password: 'ert234qw',
-    isActive: false,
-  },
+  { id: "-s19a6hqce", login: "mangozedog@mail.com", password: "qwe123zv", isActive: true },
+  { id: "-qkpzenjxe", login: "polysweet@skynet.ze", password: "123zxc78", isActive: true },
+  { id: "-e51cpd4di", login: "ajax2k@change.ua", password: "ert234qw", isActive: false }
 ];
 
+
 const initialPosts = {
-  '-s19a6hqce': [
-    { id: '-5sgljaskg', text: 'post #1', likes: 3 },
-    { id: '-199hb6igr', text: 'post #2', likes: 5 },
-    { id: '-hy0eyw5qo', text: 'post #3', likes: 13 },
+  "-s19a6hqce": [
+    { id: "-5sgljaskg", text: "post #1", likes: 3 },
+    { id: "-199hb6igr", text: "post #2", likes: 5 },
+    { id: "-hy0eyw5qo", text: "post #3", likes: 13 }
   ],
-  '-qkpzenjxe': [
-    { id: '-5tu69g5rf', text: 'post #1', likes: 8 },
-    { id: '-bje766393', text: 'post #2', likes: 15 },
+  "-qkpzenjxe": [
+    { id: "-5tu69g5rf", text: "post #1", likes: 8 },
+    { id: "-bje766393", text: "post #2", likes: 15 }
   ],
-  '-e51cpd4di': [
-    { id: '-9y6nkmlj4', text: 'post #1', likes: 18 },
-    { id: '-i03pbhy3s', text: 'post #2', likes: 45 },
+  "-e51cpd4di": [
+    { id: "-9y6nkmlj4", text: "post #1", likes: 18 },
+    { id: "-i03pbhy3s", text: "post #2", likes: 45 }
   ],
 };
 
 // перенес конструктор функцию вниз чтоб можно было вызывать перемкнные initialUsers, initialPosts
 
-function SocialBook(users = [], posts = {}) {
+function SocialBook (users = [], posts = {},) {
   this.users = users;
   this.posts = posts;
 
   // пошли методы:
-
+  
   // массив всех пользователей:
-  this.getAllUsers = () => this.users.map(elem => elem);
-
+  this.getAllUsers = () =>  this.users.map(elem => elem);
+ 
   // возвращает объект пользователя с совпадающим логином
-  this.getUserByLogin = login => this.users.find(elem => elem.login === login);
+  this.getUserByLogin = (login) => this.users.find(elem => elem.login === login);
 
   // ищет пользователя по id и возвращает 'active' если isActive true, в противном случае возвращает 'inactive'
-  this.getUserStatus = userId =>
-    this.users.filter(elem => elem.id === userId).map(elem => {
-      if (elem.isActive === true) {
-        return 'active';
-      } else {
-        return 'inactive';
+  this.getUserStatus = (userId) => this.users
+    .filter(elem => elem.id === userId)
+    .map(elem => {
+      if (elem.isActive === true){
+        return "active"
       }
-    });
+      else{
+        return "inactive"
+      }});
 
+  
   // принимает объект user с полями email и password и добавляет ему поля id(используя функцию getId) и isActive (false). Затем добавляет пользователя в свойство users самого экземпляра.
-  const getId = () =>
-    '-' +
-    Math.random()
-      .toString(36)
-      .substr(2, 9);
-  this.addUser = function(user) {
+  const getId = () => "-" + Math.random().toString(36).substr(2, 9);
+  this.addUser = function(user){
+    
     this.users.push(user);
     user.id = getId();
     user.isActive = false;
   };
 
   // удаляет пользователя из массива пользователей по полю id
-  this.removeUserById = userId =>
-    (this.users = this.users.filter(elem => elem.id !== userId));
-
+  this.removeUserById = (userId) => this.users = this.users.filter(elem => elem.id !== userId);
+    
   // возвращает общее количество пользователей
   this.getUsersCount = () => console.log(this.users.length);
-}
+  
+
+      
+  
+                  
+  
+ };
 
 const book = new SocialBook(initialUsers, initialPosts);
 
-// СДЕЛАЛ вызовы тут
+
+// СДЕЛАЛ вызовы тут 
 console.log(book.getAllUsers());
-console.log(book.getUserByLogin('ajax2k@change.ua'));
-console.log(book.getUserStatus('-qkpzenjxe'));
+console.log(book.getUserByLogin("ajax2k@change.ua"));
+console.log(book.getUserStatus("-qkpzenjxe"));
 book.addUser({
-  login: 'ziman666mirage@mail.ru',
+  login: "ziman666mirage@mail.ru",
   password: '11111111',
 });
 // проверка addUser
 console.log(book.getAllUsers());
-book.removeUserById('-e51cpd4di');
+book.removeUserById("-e51cpd4di");
 // проверка removeUserById
 console.log(book.getAllUsers());
-book.getUsersCount();
+book.getUsersCount()
+
+
+
 
 /*
   Для создания уникального идентификатора для поля id, используйте 
@@ -124,11 +120,7 @@ book.getUsersCount();
   
   К примеру: const user = { id: getId(), name: 'Mango' };
 */
-const getId = () =>
-  '-' +
-  Math.random()
-    .toString(36)
-    .substr(2, 9);
+const getId = () => "-" + Math.random().toString(36).substr(2, 9);
 
 /*
   Добавьте в SocialBook следующие методы для работы с пользователями:
@@ -165,3 +157,4 @@ const getId = () =>
     
     - getPostsCount(userId) - возвращает общее количество постов пользователя с id равным userId
 */
+
