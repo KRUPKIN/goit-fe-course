@@ -66,20 +66,27 @@ function SocialBook(users = [], posts = {}) {
   // пошли методы:
 
   // массив всех пользователей:
-  this.getAllUsers = () => this.users.map(elem => elem);
+  this.getAllUsers = () => console.log(users);
 
   // возвращает объект пользователя с совпадающим логином
   this.getUserByLogin = login => this.users.find(elem => elem.login === login);
 
   // ищет пользователя по id и возвращает 'active' если isActive true, в противном случае возвращает 'inactive'
   this.getUserStatus = userId =>
-    this.users.filter(elem => elem.id === userId).map(elem => {
+    this.users
+    .filter(elem => elem.id === userId)
+    .forEach(elem => {
       if (elem.isActive === true) {
-        return 'active';
+        console.log('active');
       } else {
-        return 'inactive';
+        console.log('active');
       }
     });
+
+
+
+    
+
 
   // принимает объект user с полями email и password и добавляет ему поля id(используя функцию getId) и isActive (false). Затем добавляет пользователя в свойство users самого экземпляра.
   const getId = () =>
@@ -104,9 +111,9 @@ function SocialBook(users = [], posts = {}) {
 const book = new SocialBook(initialUsers, initialPosts);
 
 // СДЕЛАЛ вызовы тут
-console.log(book.getAllUsers());
+book.getAllUsers();
 console.log(book.getUserByLogin('ajax2k@change.ua'));
-console.log(book.getUserStatus('-qkpzenjxe'));
+book.getUserStatus('-qkpzenjxe');
 book.addUser({
   login: 'ziman666mirage@mail.ru',
   password: '11111111',
