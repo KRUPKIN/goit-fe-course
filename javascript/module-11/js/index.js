@@ -139,6 +139,12 @@ function filterByUserChooise(evt){
 // ДЕЛАЮ СОСТАВЛЕНИЕ КРИТЕРИЯ ОТБОРА
 function checkboxFilter(formelement){
   const inputs = Array.from(formelement.querySelectorAll("input:checked"))
+  if (inputs.length === 0){
+    // ОЧИСТКА ФОРМЫ
+    clearTamplate();
+    // ВЫЗОВ НА СОЗДАНИЕ
+    createTamplate(laptops);
+  }
   const filter = { size: [], color: [], release_date: [] }
 
   inputs.forEach(({name, value}) => {
