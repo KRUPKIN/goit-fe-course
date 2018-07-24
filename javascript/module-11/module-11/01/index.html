@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript</title>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+
+	<body>
+		<ul class="list">
+			<template id="template-list">
+			{{#each this}}
+					<li class="item">
+						<p class="name">{{name}}</p>
+						<span class="count">{{count}}</span>
+					</li>
+			{{/each}}
+			</template>
+		</ul>
+
+		<ul class="root"></ul>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+		<script src="js/index.js" ></script>
+</body>
+</html>

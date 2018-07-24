@@ -1,0 +1,164 @@
+*{
+  box-sizing: border-box;
+  /* outline: 1px solid #999; */
+}
+
+body{
+  background-color: #f9d22c;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  font-family: Squada One;
+  color:white;
+  font-size: 20px;
+}
+
+button{
+  width: 80px;
+  border: none;
+  border-radius: 3px;
+  background-color: #e74186;
+  font-size: 20px;
+  color: #f9d22c;
+  font-family: Squada One;
+  cursor:pointer;
+}
+
+input[type="checkbox"]{
+border: 4px solid #f00;
+ width: 25px;
+ height: 25px;
+}
+
+
+.header-wrapper{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 1250px;
+  border-bottom: 10px solid #e74186;
+}
+
+.main-wrapper{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 1250px;
+  margin: auto;
+}
+
+.asside-wrapper{
+  width: 20%px;
+}
+
+.main-block{
+  margin-top:27px;
+  margin-left: 10px;
+  width: 80%;
+
+  border: 2px solid #e74186;
+  border-radius: 5px;
+}
+
+.heder-title{
+  font-family: Titan one;
+  font-size: 60px;
+  color: white;
+	text-shadow: 1px 0 1px #e74186, 
+0 1px 3px #e74186, 
+-1px 0 3px #e74186, 
+0 -1px 1px #e74186;
+}
+
+.form-title{
+  font-family: Squada One;
+  font-size: 30px;
+  text-align: center;
+  color: #f9d22c;
+}
+
+.form-title-wrap{
+  width: 95%;
+  background-color: #e74186;
+  border: none;
+  border-radius: 5px;
+}
+
+.type-title{
+  font-family: Squada One;
+  font-size: 23px;
+  color: #e74186;
+  padding-left: 20px;
+}
+
+
+.goods-galery{
+  padding: 10px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-arounds;
+  flex-wrap: wrap;
+
+}
+
+/* LAPTOP */
+.laptop{
+  display: block;
+  margin: 5px;
+  width: 32%;
+  background-color: white;
+  border: 4px solid #e74186;
+  border-radius: 15px;
+}
+.laptop:hover {
+  box-shadow: 0 1px 10px #e74186;
+}
+
+.laptop-image{
+  display: block;
+  width: 95%;
+  margin: auto;
+}
+
+.laptop-title{
+  margin: auto;
+  text-align: center;
+  font-family: Squada One;
+  font-size: 25px;
+  color: #e74186;
+}
+
+.sale-block{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 15px;
+  width: 25%;
+}
+
+.laptop-price{
+font-family: Squada One;
+font-size: 23px;
+margin: auto;
+color: #e74186;
+}
+
+.info-block{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f9d22c;
+}
+
+.info-block p {
+  margin: 0px;
+  margin-bottom: 5px;
+  font-family: Squada One;
+  font-size: 20px;
+  color: white;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript</title>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+
+	<body>
+		<div class="block">
+
+		</div>
+			<template class="source">
+			{{#each this}}
+				<div class="post">
+					<h2 class="title">{{title}}</h2>
+					<p class="text">{{text}}</p>
+					{{#if isFav}}
+					<span class="fav-icon">A</span>
+					{{else}}
+					<span class="fav-icon">B</span>
+					{{/if}}
+				</div>
+			{{/each}}
+			</template>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+		<script src="js/index.js" ></script>
+</body>
+</html>
+

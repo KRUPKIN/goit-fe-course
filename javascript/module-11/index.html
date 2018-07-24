@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/spiner.css">
+		<link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
+	</head>
+<!-- BODY -->
+	<body>
+<!-- HEADER -->
+		<header>
+			<div class="header-wrapper">
+				<div class="logotype">
+					<img class="logotype-image" src="img/ponchik-eda-simpsony-gomer.png" alt="logo">
+				</div>
+				<h1 class="heder-title">the shop of stolen goods of Homer Simpson</h1>
+			</div>
+		</header>
+<!-- MAIN -->
+		<main>
+			<div class="main-wrapper">
+				<aside>
+						<div class="asside-wrapper">
+							<div class="form-title-wrap">
+								<h2 class="form-title">choose a cool laptop</h2>
+							</div>
+							<form class="form js-form">
+									<section>
+										<h3 class="type-title">Screen size</h3>
+										<ul>
+											<li><label><input type="checkbox" name="size" value="13"> 13"</label></li>
+											<li><label><input type="checkbox" name="size" value="15"> 15"</label></li>
+											<li><label><input type="checkbox" name="size" value="17"> 17"</label></li>
+										</ul>
+									</section>
+									<section>
+										<h3 class="type-title">Color</h3>
+										<ul>
+											<li><label><input type="checkbox" name="color" value="white"> white</label></li>
+											<li><label><input type="checkbox" name="color" value="gray"> gray</label></li>
+											<li><label><input type="checkbox" name="color" value="black"> black</label></li>
+										</ul>
+									</section>
+									<section>
+										<h3 class="type-title">Release date</h3>
+										<ul>
+											<li><label><input type="checkbox" name="release_date" value="2015"> 2015</label></li>
+											<li><label><input type="checkbox" name="release_date" value="2016"> 2016</label></li>
+											<li><label><input type="checkbox" name="release_date" value="2017"> 2017</label></li>
+										</ul>
+									</section>
+									<button type="submit">Filter</button>
+									<button type="reset">Clear</button>
+								</form>
+								<img src="img/023.png" alt="">
+								<div class="social-links">
+								</div>
+							</div>
+					</aside>
+					<div class="main-block">
+						<div class="goods-galery">
+							<!-- SPINER -->
+							<div class="spinner-overlay">
+							<div class="spinner">
+								<div class="rect1"></div>
+								<div class="rect2"></div>
+								<div class="rect3"></div>
+								<div class="rect4"></div>
+								<div class="rect5"></div>
+							</div>
+						</div>
+						</div>
+					</div>
+			</div>
+		</main>
+<!-- FOOTER -->
+		<footer>
+		</footer>
+<!-- SCRIPTS -->
+<template class="source">
+	{{#each this}}
+	<div class="laptop">
+		<a href=""><img class="laptop-image" src="img/Laptop-Sticker-The-Simpsons-Vinyl-Decal-for-Apple-Macbook-Pro-Air-13-11-15-Inch-Color.jpg_640x640.jpg" alt="laptop"></a>
+		<h4 class="laptop-title"><a href="" class="laptop-title"> {{name}}</a></h4>
+		<div class="sale-block">
+				<p class="laptop-price">{{price}}</p>
+				<button class="laptop-buy">BUY</button>
+		</div>
+		<div class="info-block">
+			<p class="describe">{{descr}}</p>
+			<p class="color">color: {{color}}</p>
+			<p class="release-date">release-date: {{release_date}}</p>
+		</div>
+	</div>
+	{{/each}}
+</template>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+		<script src="js/index.js" ></script>
+</body>
+</html>
+
