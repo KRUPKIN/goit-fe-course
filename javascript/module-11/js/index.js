@@ -133,7 +133,33 @@ form.addEventListener("submit", filterByUserChooise);
 function filterByUserChooise(evt){
   evt.preventDefault();
   const laptopFilter = checkboxFilter(form);
-  arreyFilter(laptopFilter);
+  // console.log(laptopFilter.size)
+  
+  if(laptopFilter.size.length === 0) {
+    laptopFilter.size.push(13, 15, 17);
+  }
+
+  if(laptopFilter.color.length === 0) {
+    laptopFilter.color.push("white", "grey", "black");
+  }
+
+  if(laptopFilter.release_date.length === 0) {
+    laptopFilter.release_date.push(2015, 2016, 2017);
+  }
+
+
+  // ФИЛЬТРУЮ 
+  const NotebookFilter = laptops.filter(
+    laptop =>
+    laptopFilter.size.includes(laptop.size) &&
+    laptopFilter.color.includes(laptop.color) &&
+    laptopFilter.release_date.includes(laptop.release_date),
+  );
+  // console.log(NotebookFilter)
+// ОЧИЩАЮ ВЫЗОВ
+  clearTamplate()
+// ВЫЗОВ НА СОЗДАНИЕ
+  createTamplate(NotebookFilter);
 }
 
 // ДЕЛАЮ СОСТАВЛЕНИЕ КРИТЕРИЯ ОТБОРА
@@ -161,24 +187,6 @@ function checkboxFilter(formelement){
 return filter
 };
 
-function arreyFilter(laptopFilter){
-  // КАК ТУТ ПЕРЕБРАТЬ???
-  for (const key in laptopFilter) {
-    laptopFilter[key].map(elem=>{
-      console.log('key:',key, 'elem:',elem)
-      const newLaptops = laptops.filter(laptop => laptop[key] === elem);
-      console.log(newLaptops);
-
-      // ОЧИСТКА ФОРМЫ
-      clearTamplate();
-      // ВЫЗОВ НА СОЗДАНИЕ
-      createTamplate(newLaptops);
-    })
-  }
-};
-
-
-
 function clearTamplate(){
   const notebook = document.querySelectorAll(".laptop");
   notebook.forEach(elem => elem.remove())
@@ -199,13 +207,3 @@ function createTamplate(goodsObj){
 };
 
 
-
-// function arreyFilter(laptopFilter){
-//   for (const key in laptopFilter) {
-//     laptopFilter[key].map(elem=>{
-//       console.log('key:',key, 'elem:',elem)
-//       const newLaptops = laptops.filter(laptop => laptop[key] === elem);
-//       console.log(newLaptops);
-//     })
-//   }
-// };
