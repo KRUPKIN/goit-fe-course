@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    /* outline: 1px solid #999; */
+};
+
+body{
+
+}
+
+
+/* HEADER */
+header{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.header_wrapper{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.logo_img{
+    width: 140px;
+}
+
+.logo_link{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 90px;
+    text-decoration: none;
+    color: #263238;
+}
+
+.logo-title{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+}
+
+/* MAIN */
+.main_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.add-form{
+    margin: auto;
+}
+
+.add-btn {
+    min-width: 88px;
+    height: 36px;
+    padding: 0 16px;
+    margin-right: 3px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #00796b;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(#414141, 0.3);
+    &:hover {
+    background-color: #004c40;
+    }
+    &:active {
+    box-shadow: 0 6px 4px 0 rgba(#414141, 0.3);
+    }
+}
+
+input {
+    min-width: 400px;
+    margin-right: 12px;
+    padding: 4px;
+    outline: 0;
+    border: 0;
+    color: #263238;
+    font-size: 18px;
+    background-color: transparent;
+    border-bottom: 2px solid #00796b;
+    &::-webkit-input-placeholder {
+    color: #616161;
+    }
+    &:-ms-input-placeholder {
+    color: #616161;
+    }
+    &::-ms-input-placeholder {
+    color: #616161;
+    }
+    &::placeholder {
+    color: #616161;
+    }
+}
+
+/* FORM */
+
+.link_gallery{
+
+}
+
+.link-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.link-item{
+    padding-left: 50px;
+    list-style: none;
+    position: relative; 
+}
+
+.link-item::before{
+    content: "\1F517"; 
+    font-size: 24pt;  
+    text-align: center;  
+    line-height: 42px;  
+    /* background: #00796b; */
+    position: absolute;  
+    top: -8px;  
+    left: 0px;
+    /* border-radius: 25px;  */
+}
+
+.link-item a{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #263238;
+}
+
+.link-item a:hover{
+    color: #00796b;
+}
+
+.remove-btn{
+    background: none;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #a80046;
+    cursor: pointer;
+}
+
+.remove-btn:hover{
+    color: #db000b;
+}
+h1 {
+  color: red; }
+
