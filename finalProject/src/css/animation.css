@@ -1,0 +1,11 @@
+@keyframes animationFavorButton {
+    0% { color: #673ab7}
+    50% {color: #cddc39 }
+    100% {color: #673ab7 }
+};
+
+@keyframes animationSliderImage {
+    0% {opacity: 1 }
+    50% {opacity: 0.5 }
+    100% {opacity: 1 }
+};

@@ -1,0 +1,25 @@
+.confirm{
+    display: none;
+    z-index: 20;
+    position: absolute;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-color: rgba(33, 33, 33, 0.3);
+    color: white;
+    font-family: Roboto;
+    line-height: 400px;
+	font-size: 38px;
+    font-weight: 800;
+    
+    /* display: none; */
+}
+
+.confirm.visible{
+    display: block;
+}
