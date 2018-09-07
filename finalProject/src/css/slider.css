@@ -1,11 +1,7 @@
 .slider-overlay{
-    
     display: none;
     z-index: 10;
     position: absolute;
-    /* top: 365px; */
-    margin-top: 70px;
-    padding-bottom: 130px;
     height: 100%;
     width: 100%;
     top: 0;
@@ -21,12 +17,10 @@
     display: block;
 }
 
-
 .slider {
     position: fixed;
-    top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     margin: auto;
     width: 700px;
     height: 400px;
@@ -46,8 +40,6 @@
     display: inline-block;
 }
 
-
-
 .button__block{
     margin: auto;
     padding: 0 8px;
@@ -59,16 +51,13 @@
     border-radius: 25px;
 }
 
-.button__block div{
-    width: 30px;
-}
-
 .button__block button{
     text-align: center;
     padding: 0;
-    line-height: 35px;
+    line-height: 30px;
     font-family: 'Comfortaa', cursive;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: normal;
     color: white;
     background: none;
     border: none;
@@ -80,14 +69,33 @@
 
 .button__block .img-fav{
     color: yellow;
+    flex-grow: 2;
 }
 
-.button__block .img-prev{
-    padding-right: 4px;
+.img-prev{
+    flex-grow: 1;
 }
+
+.img-next{
+    flex-grow: 1;
+}   
+
+.img-close{
+    flex-grow: 2;
+}
+
+/* .button__block .img-prev{
+    padding-right: 4px;
+} */
 
 .button__block button:hover{
     color: #cddc39;
     font-weight: 700;
     font-size: 18;
+}
+
+
+.manege-buttons_block{
+    display: flex;
+    justify-content: space-between;
 }
