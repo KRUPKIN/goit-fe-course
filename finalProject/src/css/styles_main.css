@@ -1,23 +1,23 @@
 main{
-	display: flex;
+    flex: 1;
+    overflow: auto;
+    margin-bottom: 15px;
 }
 
 .search__block{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .gallery{
-
-    width: 100%;
+    width: 920px;
     margin: 0 auto;
     margin-bottom: 15px;
 }
 
 .favorites__header{
-    padding-left: 15px;
+    padding-left: 10px;
     color: #673ab7;
     font-family: Roboto;
     font-size: 16px;
@@ -35,9 +35,9 @@ main{
     width: 900px;
     display: grid;
     margin: auto;
-    padding: 15px;
+    padding: 10px;
     grid-gap: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 4fr));
+    grid-template-columns: repeat(auto-fill, minmax(205px, 4fr));
 }
 
 .item{
@@ -51,21 +51,19 @@ main{
 .del-item_but{
     cursor: pointer;
     position: absolute;
-    /* width: 15px;
-    height: 20px; */
     top: 5px;
     left: 90%;
     font-family: 'Comfortaa', cursive;
     font-size: 18px;
     color: white;
-    /* background-color: rgba(54, 54, 54, 0.6) */
 }
 
 .item img{
     vertical-align: middle;
     height: 120px;
     width: 100%;
-    object-fit: fit;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 .more__btn{
@@ -93,4 +91,5 @@ main{
 .search__block .load-more.visible {
     display: block;
     margin: 0 auto;
+    margin-bottom: 5px;
 }

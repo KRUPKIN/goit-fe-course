@@ -6,9 +6,9 @@ import './css/styles_header.css';
 import './css/styles_main.css';
 import './css/slider.css';
 import './css/confirm.css';
-import './css/styles_adaptative.css';
 import './css/spinner.css';
 import './css/animation.css';
+import './css/styles_adaptative.css';
 
 // MODULES
 import * as storage from './services/storage';
@@ -75,6 +75,9 @@ const handleFetch = params => {
   favorites.hideFavorHeader();
   slider.hideSlider();
   api.fetchImages(params).then(photos => {
+    if(photos.length !== 0){
+      showLoadMoreBtn();
+    }
     const markup = createGalleryItems(photos);
     updatePhotos(markup);
     spinner.toggleSpinner();
@@ -100,7 +103,6 @@ const handleFormSumit = e => {
     count: 12,
     page: currentPage,
   });
-  showLoadMoreBtn();
 };
 
 const handleLoadMoreClick = () => {

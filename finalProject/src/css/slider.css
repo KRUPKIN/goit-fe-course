@@ -1,10 +1,10 @@
 .slider-overlay{
     display: none;
     z-index: 10;
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
-    top: 0;
+    top: 210px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -19,11 +19,12 @@
 
 .slider {
     position: fixed;
-    left: 50%;
+    left: 47%;
     transform: translate(-50%, 0);
     margin: auto;
-    width: 700px;
-    height: 400px;
+    width: 80%;
+    max-width: 750px;
+    height: auto;
     text-align: center;
     font-size: 10px;
 }
@@ -34,10 +35,11 @@
 }
 
 .slider > img {
-    margin-bottom: 15px;
+    margin: 15px;
     height: 100%;
     width: 100%;
     display: inline-block;
+    object-fit: cover;
 }
 
 .button__block{
@@ -84,16 +86,11 @@
     flex-grow: 2;
 }
 
-/* .button__block .img-prev{
-    padding-right: 4px;
-} */
-
 .button__block button:hover{
     color: #cddc39;
     font-weight: 700;
     font-size: 18;
 }
-
 
 .manege-buttons_block{
     display: flex;
