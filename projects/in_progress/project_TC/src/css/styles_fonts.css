@@ -1,0 +1,17 @@
+/* ==================================================
+Font-Face Icons
+================================================== */
+
+
+.font-icon-arrow-simple-right:before {
+	content: "\e0d3";
+}
+.font-icon-arrow-simple-right-circle:before {
+	content: "\e0d4";
+}
+.font-icon-arrow-simple-left:before {
+	content: "\e0d5";
+}
+.font-icon-arrow-simple-left-circle:before {
+	content: "\e0d6";
+}
