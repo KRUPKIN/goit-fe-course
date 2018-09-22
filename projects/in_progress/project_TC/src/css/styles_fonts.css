@@ -3,15 +3,26 @@ Font-Face Icons
 ================================================== */
 
 
+.font-icon-arrow-simple-right:before,
+.font-icon-arrow-simple-left:before,
+.font-icon-arrow-simple-down:before {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 30px;
+	font-weight: 200;
+	color: white;
+}
+
 .font-icon-arrow-simple-right:before {
-	content: "\e0d3";
+	content: "\25B9";
 }
-.font-icon-arrow-simple-right-circle:before {
-	content: "\e0d4";
-}
+
 .font-icon-arrow-simple-left:before {
-	content: "\e0d5";
+	content: "\25C3";
 }
-.font-icon-arrow-simple-left-circle:before {
-	content: "\e0d6";
+
+.font-icon-arrow-simple-down:before{
+	content: "\25BF";
 }

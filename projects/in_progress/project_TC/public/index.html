@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <!-- metategs -->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- title of web-page -->
-    <title>Document</title>
+    <title>184 Training center</title>
 
     <!-- font links -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
    
     <!-- style links -->
     <link rel="stylesheet" href="/src/css/styles_reset.css">
@@ -32,40 +35,80 @@
     <div class="home-slider">	
         <div class="overlay"></div>
             <div class="slider-text">
-                <div class="slidecaption"></div>
+                <div class="slidecaption">
+
+                </div>
             </div>   
             
         <div class="control-nav">
-            <a class="prevslide"><p class="font-icon-arrow-simple-left"></p></a>
-            <a class="nextslide"><p class="font-icon-arrow-simple-right"></p></a>
+            <a class="prevslide"><div class="font-icon-arrow-simple-left"></div></a>
+            <a class="nextslide"><div class="font-icon-arrow-simple-right"></div></a>
             <ul class="slide-list">
                 <!-- поставим сюда <li><a href=""></a></li> --> 
             </ul>
-            <a class="nextsection" href="#work"></a>
+            <a class="nextsection" href="#work"><div class="font-icon-arrow-simple-down"></div></a>
         </div>
     </div>
     <!-- End Homepage Slider -->
 
-
+    <!-- Homepage Header -->
     <header>
-        <div class="sticky-nav">
-            <a class="menu-nav" href="#menu-nav"></a>
-                
-             <div class="logo">
-                <a class="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Brushed Template</a>
+        <div class="sticky-nav">                
+             <div class="logo-block">
+                <a class="logo-link" href="#home-slider">
+                    <img src="../src/img/logotype/logotype-small-red.png" alt="" class="logo-image">
+                    <p class="logo-text">184 Навчальний центр</p>
+                 </a>
             </div>
                 
             <nav class="menu">
                 <ul class="menu-nav">
-                    <li class="current"><a href="#home-slider">Home</a></li>
-                    <li><a href="#work">Our Work</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="shortcodes.html" class="external">Shortcodes</a></li>
+                    <!-- <li class="current"><a href="#home-slider">Головна</a></li> -->
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#news">Новини</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="contacts" class="external">контакти</a></li>
                 </ul>
             </nav>   
         </div>
     </header>
+    <!-- End Homepage Header -->
 
+    <!-- Homepage Main block -->
+    <main>
+
+    <!-- Block About us -->
+        <div class="about-block">
+            <div class="wrap">
+                <div class="headers-about">
+                    <h3 class="block-header_top">
+                        184 Навчальний центр
+                    </h3>
+                    <h4 class="block-header_slave">
+                        Навчаємо професіоналів
+                    </h4>
+                </div>
+                <aside class="sidebar-about">
+                    <ul>
+
+                    </ul>
+                </aside>
+                <div class="main-about"></div>
+            </div>
+        </div>
+    </main>
+    <!-- Ending Main block -->
+
+
+    <!-- Homepage Footer -->
+    <footer>
+        <div class="wrap">
+            <div class="footer-block">
+                <div class="footer-text">template by <a href="">good people</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- End Homepage Footer -->
 </body>
 </html>

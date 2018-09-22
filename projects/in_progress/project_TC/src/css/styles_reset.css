@@ -1,3 +1,8 @@
 *{
+    margin: 0;
     outline: 1px solid grey;
+}
+
+.wrap {
+    margin: 0 3% 0 3%;
 }
