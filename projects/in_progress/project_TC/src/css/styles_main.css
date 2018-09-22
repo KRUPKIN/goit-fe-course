@@ -5,7 +5,7 @@ Version: 0.1 */
 
 
 /* ==================================================
-   Basic Styles
+	Basic Styles
 ================================================== */
 html, body {
 	height: 100%;
@@ -25,7 +25,7 @@ body{
 	line-height:28px;
 }
 /* ==================================================
-   Home Slider
+	Home Slider
 ================================================== */
 .home-slider {
 	position: relative;
@@ -165,8 +165,6 @@ header .logo-text{
 	color: #DE5E60;
 }
 
-
-
 /* header .logo a:hover {
 	opacity: 0.65;
 	filter: alpha(opacity=65);	
@@ -210,33 +208,129 @@ nav.menu .menu-nav li a:hover {
 
 
 /* ==================================================
-   Main
+	Main
 ================================================== */
 
 
 /* About block
 ================================================== */
-.about-block .headers-about {
+.about-block{
+	padding-bottom: 100px;
+}
+
+.headers {
 	margin: 100px auto 100px auto;
+	font-family: 'Jura', sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.block-header_top {
+	font-size: 46px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.block-header_slave {
+	font-size: 38px;
+	font-weight: 200;
+}
+
+.main-about {
+	display: flex;
+}
+
+.main-about .info-block {
+	width: 80%;
+	height: 475px;
+	padding: 2%;
+	overflow-x: hidden;
+	background-color: #26292E;
+}
+
+.main-about .sidebar-about {
+	width: 20%;
+}
+
+.main-about .about-list {
+	padding: 10%;
+}
+
+.about-list .about-list-item {
+	margin-bottom: 15px;
+	list-style: none;
+}
+
+.about-list .about-list-item:last-child {
+	margin-bottom: 0;
+}
+
+.about-list .item-link {
+	font-family: 'Jura', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #7F8289;
+	text-decoration: none;
+}
+
+.about-list .item-link:hover {
+	font-weight: 500;
+	color: #FFFFFF;
+}
+
+.main-about .title-text-block {
+	font-family: 'Jura', sans-serif;
+	font-size: 20px;
+}
+
+.main-about .text-block {
+	text-align: justify;
 }
 
 
-.about-block .block-header {
-	
-}
-
-
-
-
-/* About block
+/* News block
 ================================================== */
+.news-block{
+	padding-top: 100px;
+	background-color: #26292E;
+}
 
+.news-block .headers{
+	margin-top: 0;
+}
 
+.top-news {
+	display: flex
+}
 
+.top-news .news-list-block {
+	width: 70%;
+}
+
+.top-news .events-list-block {
+	width: 30%;
+}
+
+.news-control-nav {
+	width: 100%;
+	background: #2F3238;
+	height: 50px;
+	bottom: 0;
+}
+
+.news-slider{
+	height: 400px;
+	padding: 2%;
+}
 
 /* ==================================================
-   Footer
+	Footer
 ================================================== */
+footer{
+	background: #26292E;
+}
+
 footer .footer-block {
 	height: 60px;
 }
@@ -245,3 +339,4 @@ footer .footer-text {
 	line-height: 60px;
 	text-align: center;
 }
+
