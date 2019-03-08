@@ -110,19 +110,50 @@ export function changePart(evt){
                         aboutUnitInfo.classList.add("unit-info")
                         modalWindow.appendChild(aboutUnitInfo);
 
+                        const topTextUnit = document.createElement('h3');
+                        topTextUnit.classList.add("unit-top-text")
                         const imageUnit = document.createElement('img');
                         imageUnit.classList.add("unit-img")
+                        const downTextUnit = document.createElement('h4');
+                        downTextUnit.classList.add("unit-down-text")
                         const textUnit = document.createElement('p');
                         textUnit.classList.add("unit-text")
 
-
-                        aboutUnitInfo.appendChild(imageUnit, textUnit);
-
+                        aboutUnitInfo.appendChild(topTextUnit);
+                        aboutUnitInfo.appendChild(imageUnit);
+                        aboutUnitInfo.appendChild(downTextUnit);
+                        aboutUnitInfo.appendChild(textUnit);
 
 
                         if(eventTarget.id === "2615"){
-
-                            showModalfromHQ(modalWindow);
+                            topTextUnit.textContent = "Управління 184 Навчального центру";
+                            imageUnit.setAttribute('src', "/src/img/svg/2615.svg");
+                            downTextUnit.textContent = "НАВЧАЄМО ПРОФЕСІОНАЛІВ"
+                            textUnit.textContent = "Управління організуває взаємодію та здійснює керування діями структурних підрозділів Навчального центру.";
+                        }
+                        else if(eventTarget.id === "3211"){
+                            topTextUnit.textContent = "355-ий Навчальний механізований полк";
+                            imageUnit.setAttribute('src', "/src/img/svg/3211.svg");
+                            downTextUnit.textContent = "ПЕРШІ СЕРЕД РІВНИХ"
+                            textUnit.textContent = "Здійснює підготовку фахового і базового рівня військовослужбовців за понад 45 спеціальностями механізованого напрямку. В структурі полку діє 11 циклових комісій в яких викладачі та інструктори з передовим досвідом ведення бойових дій в зоні АТО(ООС) здійснюють якісну підготовку захимників України. Також діє школа підготовки фахівців пожежної безпеки.";
+                        }
+                        else if(eventTarget.id === "3618"){
+                            topTextUnit.textContent = "356-ий Навчальний артилерійський полк";
+                            imageUnit.setAttribute('src', "/src/img/svg/3618.svg");
+                            downTextUnit.textContent = "КОЖЕН ПОСТРІЛ - В ЦІЛЬ"
+                            textUnit.textContent = "Здійснює підготовку фахового і базового рівня військовослужбовців за понад 34 спеціальностями артилерійського напрямку. Підготовка військовослужбовців здіснюєтсья на потужній матеріально-навчальній базі яка розташована на 4-ох війскових містечках. В постійному складі проходять службу кращі фахівці артилерійської аправи.";
+                        }
+                        else if(eventTarget.id === "2600"){
+                            topTextUnit.textContent = "138-ий окремий навчальний батальйон матеріально-технічного забезпечення";
+                            imageUnit.setAttribute('src', "/src/img/svg/2600.svg");
+                            downTextUnit.textContent = "НАДІЙНИЙ ТИЛ"
+                            textUnit.textContent = "Здійснює підготовку фахівців тилових спеціальностей адже - надійний тил основа боєздатності збройних сил.";
+                        }
+                        else if(eventTarget.id === "4138"){
+                            topTextUnit.textContent = "49-ий Навчальний центр розвідки";
+                            imageUnit.setAttribute('src', "/src/img/svg/4138.svg");
+                            downTextUnit.textContent = "EXERCITATIO ARTEM PARAT"
+                            textUnit.textContent = "Елітний підрозділ навчального центру, який здійснює підготовку спеціалістів розвідувальної справи за широким спектром спецалізацій від армійськово розвідника до операторів безпілотних літальних апаратів";
                         }
                     }
                 })
