@@ -1,0 +1,212 @@
+/* ==================================================
+	Video header
+================================================== */
+.video-header {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	/* background-image: url(../img/slider_image/slider_01.JPG) ; */
+	background-size: cover;
+}
+.video-header video{
+	position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: auto;
+    width: auto;
+    height: auto; 
+}
+
+
+@supports (object-fit: cover) {
+	.video-header video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.video-header .control-nav_video {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+	width: 100%;
+	background: rgb(0, 0, 0);
+	background: none;
+	height: 40px;
+	bottom: 0;
+	z-index: 2;
+}
+
+
+.main-button{
+	width: 90px;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	cursor: pointer;
+	transition: .5s all;
+}
+
+.main-button:hover{
+	width: 100px;
+	color: #DE5E60;
+	transition: .5s all;
+}
+
+.main-image{
+	max-width: 80%;
+	height: auto;
+	object-fit: contain;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.sound-manager{
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 40px;
+}
+
+.video-header .play-pause-btn,
+.video-header .sound-manager-link,
+.video-header .nextsection {
+	background-image: none;
+	background-color: rgb(0, 0, 0);
+	background: none;
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 50px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.hvideo-header .play-pause-btn{
+	margin-right: 2px;
+}
+
+.video-header img{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+
+
+.slide-list{
+	flex-grow: 1;
+}
+
+
+.font-icon-arrow-simple-right,
+.font-icon-arrow-simple-left {
+	height: 100%;
+}
+
+
+/* ==================================================
+	Header
+================================================== */
+
+header {
+	width: 100%;
+	z-index: 99;
+	font-family: 'Play', sans-serif;
+	background-color: #26292E;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.header-menu{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 3% 10px 3%;
+}
+
+.logo-link{
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+.logo-text{
+	font-size: 50px;
+	font-family: 'Wallpoet', cursive;
+	text-transform: uppercase;
+	color: #DE5E60;
+}
+
+.logo-text-small{
+	font-size: 25px;
+}
+
+.navigation a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 0 16px;
+	transition: .5s all;
+}
+
+.navigation a:hover{
+	color: #DE5E60;
+	transition: .5s all;
+}
+
+.navigation .it_is_comming:hover{
+	color: #666666;
+}
+
+.navigation .menu-icon{
+	display: none;
+}
+
+/* ANIMATION */
+
+
+.logo-text{
+	letter-spacing: 0;
+	/* padding: .25em 0 .325em; */
+	display: block;
+	/* margin: 0 auto; */
+	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	background: url(../img/site_decorations/animated_text_fill.png) repeat-y;
+	-webkit-background-clip: text;
+	background-clip: text;
+
+/* Animate Background Image */
+
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+	transition: all 1s;
+}
+
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
