@@ -1,0 +1,96 @@
+
+/* ==================================================
+	Basic Styles
+================================================== */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    /* outline: 1px solid grey; */
+}
+
+html, body {
+	height: 100%;
+	position: relative;
+}
+
+html, hmtl a{
+	width:100%;
+	font-size: 100%; 
+}
+
+body{
+	background:#2F3238;
+	color:#7F8289;
+	font-weight:300;
+	font-size:16px;
+	line-height:28px;
+}
+
+button{
+	cursor: pointer;
+}
+
+button:focus{
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+h1{
+	display: none;
+}
+.wrap {
+    margin: 0 3% 0 3%;
+}
+
+/*_________________ Buttons __________________*/
+button{
+	margin: 0 auto 0 auto;
+	width: 160px;
+	height: 50px;
+	font-family: 'Play', sans-serif;
+	font-size: 18px;
+	line-height: 50px;
+	background-color: #7F8289;
+	color: #26292E;
+	border: none;
+	opacity: .5;
+	transition: .8s all;
+}
+
+button:hover{
+	background-color: #3A8885;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: .8s all;
+	color: #ffffff;
+	opacity: 1;
+}
+
+
+/*_________________ Links __________________*/
+
+a {
+	text-decoration: none;
+}
+
+a:visited{
+	color: #7F8289;
+}
+
+a:link{
+	color: #7F8289;
+}
+
+
+
+.main_alert{
+	position: absolute;
+	display: block;
+	z-index: 200;
+	margin: 20px 0 0 20px;
+	font-family: 'Play', sans-serif;
+	font-weight: 800;
+	color: #DE5E60;
+}

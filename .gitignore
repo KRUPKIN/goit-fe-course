@@ -40,3 +40,23 @@ projects/project_TC/package\.json
 projects/project_TC/postcss\.config\.js
 
 projects/project_TC/webpack\.config\.js
+
+projects/184_training_center/in_work/\.babelrc
+
+projects/184_training_center/in_work/package-lock\.json
+
+projects/184_training_center/in_work/package\.json
+
+projects/184_training_center/in_work/postcss\.config\.js
+
+projects/184_training_center/in_work/webpack\.config\.js
+
+projects/droguns/in_work/\.babelrc
+
+projects/droguns/in_work/package-lock\.json
+
+projects/droguns/in_work/package\.json
+
+projects/droguns/in_work/postcss\.config\.js
+
+projects/droguns/in_work/webpack\.config\.js
