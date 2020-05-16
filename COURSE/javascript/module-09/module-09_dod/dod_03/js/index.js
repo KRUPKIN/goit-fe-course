@@ -29,66 +29,28 @@ const timer = {
   id: null
 };
 
-startBtn.addEventListener('click', startTimer);
-stopBtn.addEventListener('click', stopTimer)
+timer.id = setInterval(()=> timer.deltaTime, 100)
 
-function startTimer(event){
-    timer.startTime = Date.now();
-    
-    if(!timer.id){
-      timer.id = true;
-      timer.id = setInterval(() => {
-        const curentTime = Date.now();
-        timer.deltaTime = curentTime - timer.startTime;
-        updateClockface(clockface, timer.deltaTime);
-      }, 100)
-     };
-  setActiveBtn(event.target);
+startBtn.addEventListener("click", startTimer)
+function startTimer(){
+  timer.startTime = Date.now();
+  timer.id = setInterval(()=> {
+    timer.deltaTime = Date.now();
+    updateClockface(timer.deltaTime - timer.startTime)
+  }, 100) 
+}
+
+stopBtn.addEventListener("click", stopTimer)
+function stopTimer(){
+  clearInterval(timer.id)
 }
 
 
-function stopTimer(event){
-  clearInterval(timer.id);
-  timer.startTime = null;
-  timer.deltaTime = null;
-  timer.id = null;
-  updateClockface(clockface, timer.deltaTime);
-  setActiveBtn(event.target);
-}
-
-// Вспомогательные функции
-
-// Обновляет поле счетчика новым значением при вызове
-// аргумент time это кол-во миллисекунд
-
-function updateClockface(elem, time) {
-    elem.textContent = getFormattedTime(time);
-}
-
-function getFormattedTime(time) {
-  let date = new Date(time)
-  let minutes = date.getMinutes();
-    if(minutes < 10){
-      minutes = '0' + minutes;
-    }
-  let seconds = date.getSeconds();
-    if(seconds < 10){
-      seconds = '0' + seconds;
-    };
-  const milliseconds = Number.parseInt(date.getMilliseconds()/100);
-    return `${minutes}:${seconds}.${milliseconds}`;
-  }
-
-
-// Подсветка активной кнопки
-
-function setActiveBtn(target) {
-  if(target.classList.contains('active')) {
-    return;
-  }
-  
-  startBtn.classList.remove('active');
-  stopBtn.classList.remove('active');
-  
-  target.classList.add('active');
+function updateClockface(time){
+  const date = new Date(time)
+  const minutes =  date.getMinutes() >= 10 ? date.getMinutes(): "0" + date.getMinutes()
+  const seconds = date.getSeconds() >= 10 ? date.getSeconds(): "0" + date.getSeconds()
+  const miliSeconds = parseInt(date.getMilliseconds()/100)
+  const newTime = `${minutes}:${seconds}:${miliSeconds}`
+  clockface.textContent = newTime;
 }

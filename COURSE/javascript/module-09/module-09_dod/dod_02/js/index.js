@@ -7,18 +7,13 @@
   то есть если сейчас 831мс то нам интересна исключительно цифра 8.
 */
 
-function getFormattedTime(time) {
-let date = new Date(time)
-let minutes = date.getMinutes();
-if(minutes < 10){
-  minutes = '0' + minutes;
-}
-let seconds = date.getSeconds();
-if(seconds < 10){
-  seconds = '0' + seconds;
-};
-const milliseconds = Number.parseInt(date.getMilliseconds()/100);
-  return `${minutes}:${seconds}.${milliseconds}`;
+function getFormattedTime(time){
+  const date = new Date(time)
+  const minutes =  date.getMinutes() > 10 ? date.getMinutes(): "0" + date.getMinutes()
+  const seconds = date.getSeconds() > 10 ? date.getSeconds(): "0" + date.getSeconds()
+  const miliSeconds = parseInt(date.getMilliseconds()/100)
+  const newTime = `${minutes}:${seconds}:${miliSeconds}`
+  return newTime;
 }
 
 console.log(

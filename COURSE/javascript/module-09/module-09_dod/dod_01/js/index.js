@@ -7,32 +7,25 @@
 */
 
 const colors = ['#FFFFFF', '#F44336', '#2196F3', '#4CAF50', '#FF9800', '#009688', '#795548'];
+const body = document.querySelector("body")
+const interval = setInterval(function(){
+  const body = document.querySelector("body")
+  console.log()
+  body.setAttribute("style", `background-color: ${colors[parseInt(Math.random() * (6 - 0)+ 0)]};`)
+},1000)
 
-const buttonStart = document.querySelector('.js-start')
-const buttonStop = document.querySelector('.js-stop')
-const background = document.querySelector('body')
-// background.style.backgroundColor = 'red'
-
-
-buttonStart.addEventListener('click', changeBackgroundColor);
-buttonStop.addEventListener('click', stopChangeBackgroundColor);
-
-let timerId = null;
-let isActive = false;
-
-function changeBackgroundColor(){
-  if(!isActive){
-    isActive = true;
-    timerId = setInterval(() => {
-      background.style.backgroundColor = colors[Math.floor(Math.random()*(7 - 0) + 0)]
-    }, 2000);
+body.addEventListener("click", changeColor);
+function changeColor(ev){
+  if(ev.target.nodeName !== "BUTTON"){
+    return
   }
-};
-
-function stopChangeBackgroundColor(){
-  isActive = false;
-  clearInterval(timerId);
-};
-
-
-console.log(Math.floor(Math.random()*(7 - 0) + 0));
+  const target = ev.target.textContent;
+  switch(target){
+    case "Start":
+        interval
+    break;
+    case "Stop":
+        clearInterval(interval)
+    break;
+  }
+}
